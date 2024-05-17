@@ -1,0 +1,1708 @@
+2024-05-17 10:46:35,953:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-17 10:46:35,953:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-17 10:46:35,953:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-17 10:46:35,953:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-17 10:46:37,810:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\ydata_profiling\model\correlations.py:66: UserWarning: There was an attempt to calculate the auto correlation, but this failed.
+To hide this warning, disable the calculation
+(using `df.profile_report(correlations={"auto": {"calculate": False}})`
+If this is problematic for your use case, please report this as an issue:
+https://github.com/ydataai/ydata-profiling/issues
+(include the error message: 'Function <code object pandas_auto_compute at 0x0000016EF5A1D8B0, file "c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\ydata_profiling\model\pandas\correlations_pandas.py", line 164>')
+  warnings.warn(
+
+2024-05-17 10:46:51,090:INFO:PyCaret RegressionExperiment
+2024-05-17 10:46:51,090:INFO:Logging name: reg-default-name
+2024-05-17 10:46:51,090:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-05-17 10:46:51,090:INFO:version 3.3.0
+2024-05-17 10:46:51,090:INFO:Initializing setup()
+2024-05-17 10:46:51,091:INFO:self.USI: 1f95
+2024-05-17 10:46:51,091:INFO:self._variable_keys: {'USI', 'data', 'exp_id', 'y', 'html_param', 'X_test', 'pipeline', 'logging_param', 'fold_groups_param', 'log_plots_param', 'fold_shuffle_param', 'y_train', '_ml_usecase', 'seed', 'exp_name_log', '_available_plots', 'gpu_n_jobs_param', 'X_train', 'gpu_param', 'memory', 'transform_target_param', 'fold_generator', 'y_test', 'X', 'n_jobs_param', 'target_param', 'idx'}
+2024-05-17 10:46:51,091:INFO:Checking environment
+2024-05-17 10:46:51,091:INFO:python_version: 3.11.0
+2024-05-17 10:46:51,091:INFO:python_build: ('main', 'Oct 24 2022 18:26:48')
+2024-05-17 10:46:51,091:INFO:machine: AMD64
+2024-05-17 10:46:51,091:INFO:platform: Windows-10-10.0.22631-SP0
+2024-05-17 10:46:51,102:INFO:Memory: svmem(total=8379490304, available=214372352, percent=97.4, used=8165117952, free=214372352)
+2024-05-17 10:46:51,102:INFO:Physical Core: 2
+2024-05-17 10:46:51,102:INFO:Logical Core: 4
+2024-05-17 10:46:51,102:INFO:Checking libraries
+2024-05-17 10:46:51,102:INFO:System:
+2024-05-17 10:46:51,102:INFO:    python: 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]
+2024-05-17 10:46:51,103:INFO:executable: c:\Users\yunit\AppData\Local\Programs\Python\Python311\python.exe
+2024-05-17 10:46:51,103:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-05-17 10:46:51,103:INFO:PyCaret required dependencies:
+2024-05-17 10:46:52,483:INFO:                 pip: 24.0
+2024-05-17 10:46:52,483:INFO:          setuptools: 65.5.0
+2024-05-17 10:46:52,483:INFO:             pycaret: 3.3.0
+2024-05-17 10:46:52,483:INFO:             IPython: 8.22.1
+2024-05-17 10:46:52,484:INFO:          ipywidgets: 8.1.2
+2024-05-17 10:46:52,484:INFO:                tqdm: 4.66.2
+2024-05-17 10:46:52,484:INFO:               numpy: 1.24.2
+2024-05-17 10:46:52,484:INFO:              pandas: 2.1.4
+2024-05-17 10:46:52,484:INFO:              jinja2: 3.1.3
+2024-05-17 10:46:52,484:INFO:               scipy: 1.11.3
+2024-05-17 10:46:52,484:INFO:              joblib: 1.3.2
+2024-05-17 10:46:52,484:INFO:             sklearn: 1.4.1.post1
+2024-05-17 10:46:52,484:INFO:                pyod: 1.1.3
+2024-05-17 10:46:52,485:INFO:            imblearn: 0.12.0
+2024-05-17 10:46:52,485:INFO:   category_encoders: 2.6.3
+2024-05-17 10:46:52,485:INFO:            lightgbm: 4.3.0
+2024-05-17 10:46:52,485:INFO:               numba: 0.58.1
+2024-05-17 10:46:52,485:INFO:            requests: 2.31.0
+2024-05-17 10:46:52,485:INFO:          matplotlib: 3.7.5
+2024-05-17 10:46:52,485:INFO:          scikitplot: 0.3.7
+2024-05-17 10:46:52,485:INFO:         yellowbrick: 1.5
+2024-05-17 10:46:52,485:INFO:              plotly: 5.19.0
+2024-05-17 10:46:52,485:INFO:    plotly-resampler: Not installed
+2024-05-17 10:46:52,485:INFO:             kaleido: 0.2.1
+2024-05-17 10:46:52,485:INFO:           schemdraw: 0.15
+2024-05-17 10:46:52,485:INFO:         statsmodels: 0.14.1
+2024-05-17 10:46:52,485:INFO:              sktime: 0.26.0
+2024-05-17 10:46:52,485:INFO:               tbats: 1.1.3
+2024-05-17 10:46:52,486:INFO:            pmdarima: 2.0.4
+2024-05-17 10:46:52,486:INFO:              psutil: 5.9.8
+2024-05-17 10:46:52,486:INFO:          markupsafe: 2.1.5
+2024-05-17 10:46:52,486:INFO:             pickle5: Not installed
+2024-05-17 10:46:52,486:INFO:         cloudpickle: 3.0.0
+2024-05-17 10:46:52,486:INFO:         deprecation: 2.1.0
+2024-05-17 10:46:52,486:INFO:              xxhash: 3.4.1
+2024-05-17 10:46:52,486:INFO:           wurlitzer: Not installed
+2024-05-17 10:46:52,486:INFO:PyCaret optional dependencies:
+2024-05-17 10:46:56,742:INFO:                shap: 0.44.1
+2024-05-17 10:46:56,743:INFO:           interpret: 0.5.1
+2024-05-17 10:46:56,743:INFO:                umap: 0.5.5
+2024-05-17 10:46:56,743:INFO:     ydata_profiling: 4.6.4
+2024-05-17 10:46:56,743:INFO:  explainerdashboard: 0.4.5
+2024-05-17 10:46:56,743:INFO:             autoviz: Not installed
+2024-05-17 10:46:56,743:INFO:           fairlearn: 0.7.0
+2024-05-17 10:46:56,743:INFO:          deepchecks: Not installed
+2024-05-17 10:46:56,743:INFO:             xgboost: Not installed
+2024-05-17 10:46:56,743:INFO:            catboost: 1.2.3
+2024-05-17 10:46:56,743:INFO:              kmodes: 0.12.2
+2024-05-17 10:46:56,743:INFO:             mlxtend: 0.23.1
+2024-05-17 10:46:56,743:INFO:       statsforecast: 1.5.0
+2024-05-17 10:46:56,743:INFO:        tune_sklearn: Not installed
+2024-05-17 10:46:56,743:INFO:                 ray: Not installed
+2024-05-17 10:46:56,743:INFO:            hyperopt: 0.2.7
+2024-05-17 10:46:56,743:INFO:              optuna: 3.5.0
+2024-05-17 10:46:56,743:INFO:               skopt: 0.9.0
+2024-05-17 10:46:56,743:INFO:              mlflow: 2.10.2
+2024-05-17 10:46:56,743:INFO:              gradio: 4.19.2
+2024-05-17 10:46:56,743:INFO:             fastapi: 0.110.0
+2024-05-17 10:46:56,743:INFO:             uvicorn: 0.27.1
+2024-05-17 10:46:56,743:INFO:              m2cgen: 0.10.0
+2024-05-17 10:46:56,743:INFO:           evidently: 0.4.16
+2024-05-17 10:46:56,744:INFO:               fugue: 0.8.6
+2024-05-17 10:46:56,744:INFO:           streamlit: 1.33.0
+2024-05-17 10:46:56,744:INFO:             prophet: Not installed
+2024-05-17 10:46:56,744:INFO:None
+2024-05-17 10:46:56,744:INFO:Set up data.
+2024-05-17 10:46:56,754:INFO:Set up folding strategy.
+2024-05-17 10:46:56,754:INFO:Set up train/test split.
+2024-05-17 10:46:56,764:INFO:Set up index.
+2024-05-17 10:46:56,764:INFO:Assigning column types.
+2024-05-17 10:46:56,771:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-05-17 10:46:56,771:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-05-17 10:46:56,776:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-05-17 10:46:56,781:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-17 10:46:56,848:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-17 10:46:56,893:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-17 10:46:56,894:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 10:46:56,894:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 10:46:57,562:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-05-17 10:46:57,567:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-05-17 10:46:57,572:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-17 10:46:57,632:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-17 10:46:57,675:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-17 10:46:57,675:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 10:46:57,676:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 10:46:57,676:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2024-05-17 10:46:57,680:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-05-17 10:46:57,684:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-17 10:46:57,738:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-17 10:46:57,786:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-17 10:46:57,787:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 10:46:57,787:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 10:46:57,791:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-05-17 10:46:57,797:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-17 10:46:57,868:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-17 10:46:57,918:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-17 10:46:57,919:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 10:46:57,919:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 10:46:57,919:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2024-05-17 10:46:57,928:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-17 10:46:57,982:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-17 10:46:58,038:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-17 10:46:58,039:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 10:46:58,039:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 10:46:58,047:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-17 10:46:58,095:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-17 10:46:58,131:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-17 10:46:58,132:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 10:46:58,132:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 10:46:58,133:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2024-05-17 10:46:58,200:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-17 10:46:58,245:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-17 10:46:58,246:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 10:46:58,246:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 10:46:58,331:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-17 10:46:58,387:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-17 10:46:58,387:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 10:46:58,388:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 10:46:58,388:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-05-17 10:46:58,456:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-17 10:46:58,496:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 10:46:58,496:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 10:46:58,563:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-17 10:46:58,609:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 10:46:58,609:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 10:46:58,609:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2024-05-17 10:46:58,724:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 10:46:58,724:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 10:46:58,836:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 10:46:58,837:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 10:46:58,857:INFO:Preparing preprocessing pipeline...
+2024-05-17 10:46:58,857:INFO:Set up simple imputation.
+2024-05-17 10:46:58,861:INFO:Set up encoding of categorical features.
+2024-05-17 10:46:58,862:INFO:Set up removing outliers.
+2024-05-17 10:46:58,862:INFO:Set up feature normalization.
+2024-05-17 10:46:59,211:INFO:Finished creating preprocessing pipeline.
+2024-05-17 10:46:59,224:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\yunit\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['buildingSize', 'landSize',
+                                             'bedRooms', 'bathRooms',
+                                             'garages'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['province', 'city'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('...
+                                    transformer=OneHotEncoder(cols=['province'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['city'],
+                                    transformer=TargetEncoder(cols=['city'],
+                                                              handle_missing='return_nan'))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=5714))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))])
+2024-05-17 10:46:59,224:INFO:Creating final display dataframe.
+2024-05-17 10:46:59,925:INFO:Setup _display_container:                     Description             Value
+0                    Session id              5714
+1                        Target             price
+2                   Target type        Regression
+3           Original data shape        (1600, 12)
+4        Transformed data shape        (1544, 20)
+5   Transformed train set shape        (1064, 20)
+6    Transformed test set shape         (480, 20)
+7               Ignore features                 4
+8              Numeric features                 5
+9          Categorical features                 2
+10     Rows with missing values            100.0%
+11                   Preprocess              True
+12              Imputation type            simple
+13           Numeric imputation              mean
+14       Categorical imputation              mode
+15     Maximum one-hot encoding                25
+16              Encoding method              None
+17              Remove outliers              True
+18           Outliers threshold              0.05
+19                    Normalize              True
+20             Normalize method            zscore
+21               Fold Generator             KFold
+22                  Fold Number                10
+23                     CPU Jobs                -1
+24                      Use GPU             False
+25               Log Experiment             False
+26              Experiment Name  reg-default-name
+27                          USI              1f95
+2024-05-17 10:47:00,085:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 10:47:00,086:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 10:47:00,206:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 10:47:00,206:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 10:47:00,227:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:51: FutureWarning: The `needs_threshold` and `needs_proba` parameter are deprecated in version 1.4 and will be removed in 1.6. You can either let `response_method` be `None` or set it to `predict` to preserve the same behaviour.
+  warnings.warn(
+
+2024-05-17 10:47:00,227:INFO:setup() successfully completed in 9.27s...............
+2024-05-17 10:47:00,247:INFO:Initializing get_config()
+2024-05-17 10:47:00,247:INFO:get_config(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, variable=X_train)
+2024-05-17 10:47:00,248:INFO:Variable: 'X_train' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'X_train_transformed' instead.
+2024-05-17 10:47:00,264:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\pycaret_experiment\pycaret_experiment.py:321: UserWarning: Variable: 'X_train' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'X_train_transformed' instead.
+  warnings.warn(msg)  # print on screen
+
+2024-05-17 10:47:00,271:INFO:Variable:  returned as       buildingSize  landSize  bedRooms  bathRooms  garages     province  \
+1456            98       137       4.0          2        0   Jawa Barat   
+1115           170       169       4.0          4        0      Jakarta   
+1227           170       248       4.0          1        0   Jawa Timur   
+160            300       392      12.0          7        0  Jawa Tengah   
+901            150      1234       4.0          2        0  Jawa Tengah   
+...            ...       ...       ...        ...      ...          ...   
+1107           550       352       5.0          5        0   Jawa Timur   
+1449            42        72       2.0          1        0   Jawa Timur   
+1141           300       190      16.0         10        1   Yogyakarta   
+882            120        90       3.0          2        0   Jawa Timur   
+285            230       145       4.0          3        1       Banten   
+
+                   city  
+1456             Bekasi  
+1115      Jakarta Timur  
+1227           Surabaya  
+160            Boyolali  
+901                 NaN  
+...                 ...  
+1107           Surabaya  
+1449           Sidoarjo  
+1141         Yogyakarta  
+882            Sidoarjo  
+285   Tangerang Selatan  
+
+[1120 rows x 7 columns]
+2024-05-17 10:47:00,271:INFO:get_config() successfully completed......................................
+2024-05-17 10:47:00,322:INFO:Initializing compare_models()
+2024-05-17 10:47:00,322:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, include=None, exclude=None, fold=None, round=4, cross_validation=True, sort=R2, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'R2', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>})
+2024-05-17 10:47:00,323:INFO:Checking exceptions
+2024-05-17 10:47:00,325:INFO:Preparing display monitor
+2024-05-17 10:47:00,378:INFO:Initializing Linear Regression
+2024-05-17 10:47:00,378:INFO:Total runtime is 0.0 minutes
+2024-05-17 10:47:00,382:INFO:SubProcess create_model() called ==================================
+2024-05-17 10:47:00,385:INFO:Initializing create_model()
+2024-05-17 10:47:00,385:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=lr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E9CEC9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:00,385:INFO:Checking exceptions
+2024-05-17 10:47:00,385:INFO:Importing libraries
+2024-05-17 10:47:00,386:INFO:Copying training dataset
+2024-05-17 10:47:00,393:INFO:Defining folds
+2024-05-17 10:47:00,393:INFO:Declaring metric variables
+2024-05-17 10:47:00,401:INFO:Importing untrained model
+2024-05-17 10:47:00,410:INFO:Linear Regression Imported successfully
+2024-05-17 10:47:00,424:INFO:Starting cross validation
+2024-05-17 10:47:00,520:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 10:47:12,597:INFO:Calculating mean and std
+2024-05-17 10:47:12,603:INFO:Creating metrics dataframe
+2024-05-17 10:47:12,606:INFO:Uploading results into container
+2024-05-17 10:47:12,609:INFO:Uploading model into container now
+2024-05-17 10:47:12,609:INFO:_master_model_container: 1
+2024-05-17 10:47:12,609:INFO:_display_container: 2
+2024-05-17 10:47:12,611:INFO:LinearRegression(n_jobs=-1)
+2024-05-17 10:47:12,611:INFO:create_model() successfully completed......................................
+2024-05-17 10:47:13,103:INFO:SubProcess create_model() end ==================================
+2024-05-17 10:47:13,104:INFO:Creating metrics dataframe
+2024-05-17 10:47:13,111:INFO:Initializing Lasso Regression
+2024-05-17 10:47:13,111:INFO:Total runtime is 0.21222181717554728 minutes
+2024-05-17 10:47:13,116:INFO:SubProcess create_model() called ==================================
+2024-05-17 10:47:13,116:INFO:Initializing create_model()
+2024-05-17 10:47:13,117:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=lasso, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E9CEC9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:13,118:INFO:Checking exceptions
+2024-05-17 10:47:13,118:INFO:Importing libraries
+2024-05-17 10:47:13,118:INFO:Copying training dataset
+2024-05-17 10:47:13,126:INFO:Defining folds
+2024-05-17 10:47:13,126:INFO:Declaring metric variables
+2024-05-17 10:47:13,132:INFO:Importing untrained model
+2024-05-17 10:47:13,139:INFO:Lasso Regression Imported successfully
+2024-05-17 10:47:13,148:INFO:Starting cross validation
+2024-05-17 10:47:13,162:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 10:47:13,528:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.121e+20, tolerance: 2.590e+18
+  model = cd_fast.enet_coordinate_descent(
+
+2024-05-17 10:47:13,557:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.473e+21, tolerance: 3.569e+18
+  model = cd_fast.enet_coordinate_descent(
+
+2024-05-17 10:47:13,925:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.796e+21, tolerance: 3.742e+18
+  model = cd_fast.enet_coordinate_descent(
+
+2024-05-17 10:47:13,939:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 9.299e+20, tolerance: 3.872e+18
+  model = cd_fast.enet_coordinate_descent(
+
+2024-05-17 10:47:13,982:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.250e+21, tolerance: 3.702e+18
+  model = cd_fast.enet_coordinate_descent(
+
+2024-05-17 10:47:13,986:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.615e+21, tolerance: 3.517e+18
+  model = cd_fast.enet_coordinate_descent(
+
+2024-05-17 10:47:14,509:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.622e+21, tolerance: 3.727e+18
+  model = cd_fast.enet_coordinate_descent(
+
+2024-05-17 10:47:14,521:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.338e+21, tolerance: 3.750e+18
+  model = cd_fast.enet_coordinate_descent(
+
+2024-05-17 10:47:14,558:INFO:Calculating mean and std
+2024-05-17 10:47:14,559:INFO:Creating metrics dataframe
+2024-05-17 10:47:14,563:INFO:Uploading results into container
+2024-05-17 10:47:14,564:INFO:Uploading model into container now
+2024-05-17 10:47:14,564:INFO:_master_model_container: 2
+2024-05-17 10:47:14,564:INFO:_display_container: 2
+2024-05-17 10:47:14,564:INFO:Lasso(random_state=5714)
+2024-05-17 10:47:14,564:INFO:create_model() successfully completed......................................
+2024-05-17 10:47:14,759:INFO:SubProcess create_model() end ==================================
+2024-05-17 10:47:14,759:INFO:Creating metrics dataframe
+2024-05-17 10:47:14,764:INFO:Initializing Ridge Regression
+2024-05-17 10:47:14,764:INFO:Total runtime is 0.23977883259455363 minutes
+2024-05-17 10:47:14,772:INFO:SubProcess create_model() called ==================================
+2024-05-17 10:47:14,772:INFO:Initializing create_model()
+2024-05-17 10:47:14,773:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=ridge, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E9CEC9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:14,773:INFO:Checking exceptions
+2024-05-17 10:47:14,773:INFO:Importing libraries
+2024-05-17 10:47:14,773:INFO:Copying training dataset
+2024-05-17 10:47:14,778:INFO:Defining folds
+2024-05-17 10:47:14,778:INFO:Declaring metric variables
+2024-05-17 10:47:14,785:INFO:Importing untrained model
+2024-05-17 10:47:14,791:INFO:Ridge Regression Imported successfully
+2024-05-17 10:47:14,804:INFO:Starting cross validation
+2024-05-17 10:47:14,812:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 10:47:15,772:INFO:Calculating mean and std
+2024-05-17 10:47:15,773:INFO:Creating metrics dataframe
+2024-05-17 10:47:15,775:INFO:Uploading results into container
+2024-05-17 10:47:15,775:INFO:Uploading model into container now
+2024-05-17 10:47:15,775:INFO:_master_model_container: 3
+2024-05-17 10:47:15,776:INFO:_display_container: 2
+2024-05-17 10:47:15,776:INFO:Ridge(random_state=5714)
+2024-05-17 10:47:15,776:INFO:create_model() successfully completed......................................
+2024-05-17 10:47:16,070:INFO:SubProcess create_model() end ==================================
+2024-05-17 10:47:16,071:INFO:Creating metrics dataframe
+2024-05-17 10:47:16,079:INFO:Initializing Elastic Net
+2024-05-17 10:47:16,079:INFO:Total runtime is 0.26168232361475624 minutes
+2024-05-17 10:47:16,084:INFO:SubProcess create_model() called ==================================
+2024-05-17 10:47:16,085:INFO:Initializing create_model()
+2024-05-17 10:47:16,085:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=en, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E9CEC9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:16,085:INFO:Checking exceptions
+2024-05-17 10:47:16,085:INFO:Importing libraries
+2024-05-17 10:47:16,085:INFO:Copying training dataset
+2024-05-17 10:47:16,089:INFO:Defining folds
+2024-05-17 10:47:16,089:INFO:Declaring metric variables
+2024-05-17 10:47:16,092:INFO:Importing untrained model
+2024-05-17 10:47:16,097:INFO:Elastic Net Imported successfully
+2024-05-17 10:47:16,105:INFO:Starting cross validation
+2024-05-17 10:47:16,113:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 10:47:17,023:INFO:Calculating mean and std
+2024-05-17 10:47:17,024:INFO:Creating metrics dataframe
+2024-05-17 10:47:17,025:INFO:Uploading results into container
+2024-05-17 10:47:17,026:INFO:Uploading model into container now
+2024-05-17 10:47:17,026:INFO:_master_model_container: 4
+2024-05-17 10:47:17,026:INFO:_display_container: 2
+2024-05-17 10:47:17,026:INFO:ElasticNet(random_state=5714)
+2024-05-17 10:47:17,026:INFO:create_model() successfully completed......................................
+2024-05-17 10:47:17,208:INFO:SubProcess create_model() end ==================================
+2024-05-17 10:47:17,208:INFO:Creating metrics dataframe
+2024-05-17 10:47:17,219:INFO:Initializing Least Angle Regression
+2024-05-17 10:47:17,220:INFO:Total runtime is 0.2807047883669535 minutes
+2024-05-17 10:47:17,224:INFO:SubProcess create_model() called ==================================
+2024-05-17 10:47:17,224:INFO:Initializing create_model()
+2024-05-17 10:47:17,224:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=lar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E9CEC9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:17,224:INFO:Checking exceptions
+2024-05-17 10:47:17,224:INFO:Importing libraries
+2024-05-17 10:47:17,224:INFO:Copying training dataset
+2024-05-17 10:47:17,240:INFO:Defining folds
+2024-05-17 10:47:17,240:INFO:Declaring metric variables
+2024-05-17 10:47:17,243:INFO:Importing untrained model
+2024-05-17 10:47:17,247:INFO:Least Angle Regression Imported successfully
+2024-05-17 10:47:17,256:INFO:Starting cross validation
+2024-05-17 10:47:17,270:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 10:47:18,119:INFO:Calculating mean and std
+2024-05-17 10:47:18,120:INFO:Creating metrics dataframe
+2024-05-17 10:47:18,121:INFO:Uploading results into container
+2024-05-17 10:47:18,122:INFO:Uploading model into container now
+2024-05-17 10:47:18,122:INFO:_master_model_container: 5
+2024-05-17 10:47:18,122:INFO:_display_container: 2
+2024-05-17 10:47:18,123:INFO:Lars(random_state=5714)
+2024-05-17 10:47:18,123:INFO:create_model() successfully completed......................................
+2024-05-17 10:47:18,291:INFO:SubProcess create_model() end ==================================
+2024-05-17 10:47:18,291:INFO:Creating metrics dataframe
+2024-05-17 10:47:18,297:INFO:Initializing Lasso Least Angle Regression
+2024-05-17 10:47:18,297:INFO:Total runtime is 0.29866176446278886 minutes
+2024-05-17 10:47:18,302:INFO:SubProcess create_model() called ==================================
+2024-05-17 10:47:18,303:INFO:Initializing create_model()
+2024-05-17 10:47:18,303:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=llar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E9CEC9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:18,303:INFO:Checking exceptions
+2024-05-17 10:47:18,303:INFO:Importing libraries
+2024-05-17 10:47:18,303:INFO:Copying training dataset
+2024-05-17 10:47:18,308:INFO:Defining folds
+2024-05-17 10:47:18,308:INFO:Declaring metric variables
+2024-05-17 10:47:18,312:INFO:Importing untrained model
+2024-05-17 10:47:18,316:INFO:Lasso Least Angle Regression Imported successfully
+2024-05-17 10:47:18,322:INFO:Starting cross validation
+2024-05-17 10:47:18,333:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 10:47:19,301:INFO:Calculating mean and std
+2024-05-17 10:47:19,303:INFO:Creating metrics dataframe
+2024-05-17 10:47:19,307:INFO:Uploading results into container
+2024-05-17 10:47:19,308:INFO:Uploading model into container now
+2024-05-17 10:47:19,308:INFO:_master_model_container: 6
+2024-05-17 10:47:19,309:INFO:_display_container: 2
+2024-05-17 10:47:19,309:INFO:LassoLars(random_state=5714)
+2024-05-17 10:47:19,309:INFO:create_model() successfully completed......................................
+2024-05-17 10:47:19,512:INFO:SubProcess create_model() end ==================================
+2024-05-17 10:47:19,512:INFO:Creating metrics dataframe
+2024-05-17 10:47:19,520:INFO:Initializing Orthogonal Matching Pursuit
+2024-05-17 10:47:19,520:INFO:Total runtime is 0.3190299153327941 minutes
+2024-05-17 10:47:19,523:INFO:SubProcess create_model() called ==================================
+2024-05-17 10:47:19,524:INFO:Initializing create_model()
+2024-05-17 10:47:19,524:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=omp, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E9CEC9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:19,524:INFO:Checking exceptions
+2024-05-17 10:47:19,524:INFO:Importing libraries
+2024-05-17 10:47:19,524:INFO:Copying training dataset
+2024-05-17 10:47:19,528:INFO:Defining folds
+2024-05-17 10:47:19,528:INFO:Declaring metric variables
+2024-05-17 10:47:19,534:INFO:Importing untrained model
+2024-05-17 10:47:19,537:INFO:Orthogonal Matching Pursuit Imported successfully
+2024-05-17 10:47:19,543:INFO:Starting cross validation
+2024-05-17 10:47:19,557:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 10:47:20,553:INFO:Calculating mean and std
+2024-05-17 10:47:20,554:INFO:Creating metrics dataframe
+2024-05-17 10:47:20,557:INFO:Uploading results into container
+2024-05-17 10:47:20,558:INFO:Uploading model into container now
+2024-05-17 10:47:20,558:INFO:_master_model_container: 7
+2024-05-17 10:47:20,558:INFO:_display_container: 2
+2024-05-17 10:47:20,559:INFO:OrthogonalMatchingPursuit()
+2024-05-17 10:47:20,559:INFO:create_model() successfully completed......................................
+2024-05-17 10:47:20,741:INFO:SubProcess create_model() end ==================================
+2024-05-17 10:47:20,741:INFO:Creating metrics dataframe
+2024-05-17 10:47:20,749:INFO:Initializing Bayesian Ridge
+2024-05-17 10:47:20,750:INFO:Total runtime is 0.3395422259966532 minutes
+2024-05-17 10:47:20,754:INFO:SubProcess create_model() called ==================================
+2024-05-17 10:47:20,754:INFO:Initializing create_model()
+2024-05-17 10:47:20,755:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=br, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E9CEC9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:20,755:INFO:Checking exceptions
+2024-05-17 10:47:20,755:INFO:Importing libraries
+2024-05-17 10:47:20,755:INFO:Copying training dataset
+2024-05-17 10:47:20,761:INFO:Defining folds
+2024-05-17 10:47:20,761:INFO:Declaring metric variables
+2024-05-17 10:47:20,765:INFO:Importing untrained model
+2024-05-17 10:47:20,771:INFO:Bayesian Ridge Imported successfully
+2024-05-17 10:47:20,779:INFO:Starting cross validation
+2024-05-17 10:47:20,790:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 10:47:21,758:INFO:Calculating mean and std
+2024-05-17 10:47:21,759:INFO:Creating metrics dataframe
+2024-05-17 10:47:21,763:INFO:Uploading results into container
+2024-05-17 10:47:21,764:INFO:Uploading model into container now
+2024-05-17 10:47:21,764:INFO:_master_model_container: 8
+2024-05-17 10:47:21,765:INFO:_display_container: 2
+2024-05-17 10:47:21,766:INFO:BayesianRidge()
+2024-05-17 10:47:21,766:INFO:create_model() successfully completed......................................
+2024-05-17 10:47:21,971:INFO:SubProcess create_model() end ==================================
+2024-05-17 10:47:21,972:INFO:Creating metrics dataframe
+2024-05-17 10:47:21,978:INFO:Initializing Passive Aggressive Regressor
+2024-05-17 10:47:21,978:INFO:Total runtime is 0.3599994301795959 minutes
+2024-05-17 10:47:21,983:INFO:SubProcess create_model() called ==================================
+2024-05-17 10:47:21,984:INFO:Initializing create_model()
+2024-05-17 10:47:21,984:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=par, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E9CEC9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:21,984:INFO:Checking exceptions
+2024-05-17 10:47:21,984:INFO:Importing libraries
+2024-05-17 10:47:21,984:INFO:Copying training dataset
+2024-05-17 10:47:21,989:INFO:Defining folds
+2024-05-17 10:47:21,989:INFO:Declaring metric variables
+2024-05-17 10:47:21,995:INFO:Importing untrained model
+2024-05-17 10:47:22,002:INFO:Passive Aggressive Regressor Imported successfully
+2024-05-17 10:47:22,011:INFO:Starting cross validation
+2024-05-17 10:47:22,021:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 10:47:22,394:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1575: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+
+2024-05-17 10:47:22,395:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1575: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+
+2024-05-17 10:47:22,402:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1575: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+
+2024-05-17 10:47:22,764:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1575: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+
+2024-05-17 10:47:22,768:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1575: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+
+2024-05-17 10:47:22,770:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1575: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+
+2024-05-17 10:47:22,775:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1575: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+
+2024-05-17 10:47:23,090:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1575: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+
+2024-05-17 10:47:23,092:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1575: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+
+2024-05-17 10:47:23,125:INFO:Calculating mean and std
+2024-05-17 10:47:23,127:INFO:Creating metrics dataframe
+2024-05-17 10:47:23,129:INFO:Uploading results into container
+2024-05-17 10:47:23,130:INFO:Uploading model into container now
+2024-05-17 10:47:23,130:INFO:_master_model_container: 9
+2024-05-17 10:47:23,130:INFO:_display_container: 2
+2024-05-17 10:47:23,131:INFO:PassiveAggressiveRegressor(random_state=5714)
+2024-05-17 10:47:23,131:INFO:create_model() successfully completed......................................
+2024-05-17 10:47:23,357:INFO:SubProcess create_model() end ==================================
+2024-05-17 10:47:23,358:INFO:Creating metrics dataframe
+2024-05-17 10:47:23,368:INFO:Initializing Huber Regressor
+2024-05-17 10:47:23,368:INFO:Total runtime is 0.38317939837773635 minutes
+2024-05-17 10:47:23,372:INFO:SubProcess create_model() called ==================================
+2024-05-17 10:47:23,372:INFO:Initializing create_model()
+2024-05-17 10:47:23,373:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=huber, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E9CEC9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:23,373:INFO:Checking exceptions
+2024-05-17 10:47:23,373:INFO:Importing libraries
+2024-05-17 10:47:23,373:INFO:Copying training dataset
+2024-05-17 10:47:23,380:INFO:Defining folds
+2024-05-17 10:47:23,380:INFO:Declaring metric variables
+2024-05-17 10:47:23,385:INFO:Importing untrained model
+2024-05-17 10:47:23,391:INFO:Huber Regressor Imported successfully
+2024-05-17 10:47:23,402:INFO:Starting cross validation
+2024-05-17 10:47:23,411:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 10:47:24,286:INFO:Calculating mean and std
+2024-05-17 10:47:24,287:INFO:Creating metrics dataframe
+2024-05-17 10:47:24,289:INFO:Uploading results into container
+2024-05-17 10:47:24,289:INFO:Uploading model into container now
+2024-05-17 10:47:24,290:INFO:_master_model_container: 10
+2024-05-17 10:47:24,290:INFO:_display_container: 2
+2024-05-17 10:47:24,290:INFO:HuberRegressor()
+2024-05-17 10:47:24,291:INFO:create_model() successfully completed......................................
+2024-05-17 10:47:24,456:INFO:SubProcess create_model() end ==================================
+2024-05-17 10:47:24,457:INFO:Creating metrics dataframe
+2024-05-17 10:47:24,468:INFO:Initializing K Neighbors Regressor
+2024-05-17 10:47:24,468:INFO:Total runtime is 0.4015024026234944 minutes
+2024-05-17 10:47:24,470:INFO:SubProcess create_model() called ==================================
+2024-05-17 10:47:24,471:INFO:Initializing create_model()
+2024-05-17 10:47:24,471:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=knn, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E9CEC9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:24,471:INFO:Checking exceptions
+2024-05-17 10:47:24,471:INFO:Importing libraries
+2024-05-17 10:47:24,471:INFO:Copying training dataset
+2024-05-17 10:47:24,475:INFO:Defining folds
+2024-05-17 10:47:24,475:INFO:Declaring metric variables
+2024-05-17 10:47:24,477:INFO:Importing untrained model
+2024-05-17 10:47:24,481:INFO:K Neighbors Regressor Imported successfully
+2024-05-17 10:47:24,488:INFO:Starting cross validation
+2024-05-17 10:47:24,496:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 10:47:25,541:INFO:Calculating mean and std
+2024-05-17 10:47:25,542:INFO:Creating metrics dataframe
+2024-05-17 10:47:25,545:INFO:Uploading results into container
+2024-05-17 10:47:25,546:INFO:Uploading model into container now
+2024-05-17 10:47:25,546:INFO:_master_model_container: 11
+2024-05-17 10:47:25,546:INFO:_display_container: 2
+2024-05-17 10:47:25,546:INFO:KNeighborsRegressor(n_jobs=-1)
+2024-05-17 10:47:25,546:INFO:create_model() successfully completed......................................
+2024-05-17 10:47:25,770:INFO:SubProcess create_model() end ==================================
+2024-05-17 10:47:25,770:INFO:Creating metrics dataframe
+2024-05-17 10:47:25,781:INFO:Initializing Decision Tree Regressor
+2024-05-17 10:47:25,782:INFO:Total runtime is 0.42340662479400626 minutes
+2024-05-17 10:47:25,786:INFO:SubProcess create_model() called ==================================
+2024-05-17 10:47:25,787:INFO:Initializing create_model()
+2024-05-17 10:47:25,787:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=dt, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E9CEC9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:25,787:INFO:Checking exceptions
+2024-05-17 10:47:25,787:INFO:Importing libraries
+2024-05-17 10:47:25,787:INFO:Copying training dataset
+2024-05-17 10:47:25,792:INFO:Defining folds
+2024-05-17 10:47:25,793:INFO:Declaring metric variables
+2024-05-17 10:47:25,796:INFO:Importing untrained model
+2024-05-17 10:47:25,802:INFO:Decision Tree Regressor Imported successfully
+2024-05-17 10:47:25,807:INFO:Starting cross validation
+2024-05-17 10:47:25,819:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 10:47:26,741:INFO:Calculating mean and std
+2024-05-17 10:47:26,743:INFO:Creating metrics dataframe
+2024-05-17 10:47:26,744:INFO:Uploading results into container
+2024-05-17 10:47:26,745:INFO:Uploading model into container now
+2024-05-17 10:47:26,745:INFO:_master_model_container: 12
+2024-05-17 10:47:26,745:INFO:_display_container: 2
+2024-05-17 10:47:26,747:INFO:DecisionTreeRegressor(random_state=5714)
+2024-05-17 10:47:26,747:INFO:create_model() successfully completed......................................
+2024-05-17 10:47:26,929:INFO:SubProcess create_model() end ==================================
+2024-05-17 10:47:26,930:INFO:Creating metrics dataframe
+2024-05-17 10:47:26,944:INFO:Initializing Random Forest Regressor
+2024-05-17 10:47:26,944:INFO:Total runtime is 0.44277860720952344 minutes
+2024-05-17 10:47:26,949:INFO:SubProcess create_model() called ==================================
+2024-05-17 10:47:26,951:INFO:Initializing create_model()
+2024-05-17 10:47:26,951:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=rf, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E9CEC9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:26,951:INFO:Checking exceptions
+2024-05-17 10:47:26,951:INFO:Importing libraries
+2024-05-17 10:47:26,951:INFO:Copying training dataset
+2024-05-17 10:47:26,958:INFO:Defining folds
+2024-05-17 10:47:26,959:INFO:Declaring metric variables
+2024-05-17 10:47:26,963:INFO:Importing untrained model
+2024-05-17 10:47:26,970:INFO:Random Forest Regressor Imported successfully
+2024-05-17 10:47:27,012:INFO:Starting cross validation
+2024-05-17 10:47:27,025:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 10:47:29,386:INFO:Calculating mean and std
+2024-05-17 10:47:29,388:INFO:Creating metrics dataframe
+2024-05-17 10:47:29,389:INFO:Uploading results into container
+2024-05-17 10:47:29,390:INFO:Uploading model into container now
+2024-05-17 10:47:29,390:INFO:_master_model_container: 13
+2024-05-17 10:47:29,390:INFO:_display_container: 2
+2024-05-17 10:47:29,390:INFO:RandomForestRegressor(n_jobs=-1, random_state=5714)
+2024-05-17 10:47:29,390:INFO:create_model() successfully completed......................................
+2024-05-17 10:47:29,552:INFO:SubProcess create_model() end ==================================
+2024-05-17 10:47:29,553:INFO:Creating metrics dataframe
+2024-05-17 10:47:29,563:INFO:Initializing Extra Trees Regressor
+2024-05-17 10:47:29,563:INFO:Total runtime is 0.48641889890034984 minutes
+2024-05-17 10:47:29,567:INFO:SubProcess create_model() called ==================================
+2024-05-17 10:47:29,567:INFO:Initializing create_model()
+2024-05-17 10:47:29,567:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=et, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E9CEC9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:29,567:INFO:Checking exceptions
+2024-05-17 10:47:29,567:INFO:Importing libraries
+2024-05-17 10:47:29,567:INFO:Copying training dataset
+2024-05-17 10:47:29,572:INFO:Defining folds
+2024-05-17 10:47:29,572:INFO:Declaring metric variables
+2024-05-17 10:47:29,576:INFO:Importing untrained model
+2024-05-17 10:47:29,581:INFO:Extra Trees Regressor Imported successfully
+2024-05-17 10:47:29,589:INFO:Starting cross validation
+2024-05-17 10:47:29,596:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 10:47:31,619:INFO:Calculating mean and std
+2024-05-17 10:47:31,620:INFO:Creating metrics dataframe
+2024-05-17 10:47:31,622:INFO:Uploading results into container
+2024-05-17 10:47:31,623:INFO:Uploading model into container now
+2024-05-17 10:47:31,624:INFO:_master_model_container: 14
+2024-05-17 10:47:31,624:INFO:_display_container: 2
+2024-05-17 10:47:31,624:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=5714)
+2024-05-17 10:47:31,624:INFO:create_model() successfully completed......................................
+2024-05-17 10:47:31,787:INFO:SubProcess create_model() end ==================================
+2024-05-17 10:47:31,787:INFO:Creating metrics dataframe
+2024-05-17 10:47:31,794:INFO:Initializing AdaBoost Regressor
+2024-05-17 10:47:31,794:INFO:Total runtime is 0.5236060420672097 minutes
+2024-05-17 10:47:31,796:INFO:SubProcess create_model() called ==================================
+2024-05-17 10:47:31,797:INFO:Initializing create_model()
+2024-05-17 10:47:31,797:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=ada, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E9CEC9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:31,797:INFO:Checking exceptions
+2024-05-17 10:47:31,797:INFO:Importing libraries
+2024-05-17 10:47:31,799:INFO:Copying training dataset
+2024-05-17 10:47:31,803:INFO:Defining folds
+2024-05-17 10:47:31,803:INFO:Declaring metric variables
+2024-05-17 10:47:31,807:INFO:Importing untrained model
+2024-05-17 10:47:31,813:INFO:AdaBoost Regressor Imported successfully
+2024-05-17 10:47:31,820:INFO:Starting cross validation
+2024-05-17 10:47:31,826:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 10:47:33,104:INFO:Calculating mean and std
+2024-05-17 10:47:33,105:INFO:Creating metrics dataframe
+2024-05-17 10:47:33,106:INFO:Uploading results into container
+2024-05-17 10:47:33,106:INFO:Uploading model into container now
+2024-05-17 10:47:33,106:INFO:_master_model_container: 15
+2024-05-17 10:47:33,106:INFO:_display_container: 2
+2024-05-17 10:47:33,107:INFO:AdaBoostRegressor(random_state=5714)
+2024-05-17 10:47:33,107:INFO:create_model() successfully completed......................................
+2024-05-17 10:47:33,274:INFO:SubProcess create_model() end ==================================
+2024-05-17 10:47:33,275:INFO:Creating metrics dataframe
+2024-05-17 10:47:33,286:INFO:Initializing Gradient Boosting Regressor
+2024-05-17 10:47:33,286:INFO:Total runtime is 0.5484707276026406 minutes
+2024-05-17 10:47:33,288:INFO:SubProcess create_model() called ==================================
+2024-05-17 10:47:33,289:INFO:Initializing create_model()
+2024-05-17 10:47:33,289:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=gbr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E9CEC9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:33,289:INFO:Checking exceptions
+2024-05-17 10:47:33,289:INFO:Importing libraries
+2024-05-17 10:47:33,289:INFO:Copying training dataset
+2024-05-17 10:47:33,294:INFO:Defining folds
+2024-05-17 10:47:33,294:INFO:Declaring metric variables
+2024-05-17 10:47:33,296:INFO:Importing untrained model
+2024-05-17 10:47:33,303:INFO:Gradient Boosting Regressor Imported successfully
+2024-05-17 10:47:33,310:INFO:Starting cross validation
+2024-05-17 10:47:33,320:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 10:47:34,593:INFO:Calculating mean and std
+2024-05-17 10:47:34,595:INFO:Creating metrics dataframe
+2024-05-17 10:47:34,597:INFO:Uploading results into container
+2024-05-17 10:47:34,599:INFO:Uploading model into container now
+2024-05-17 10:47:34,601:INFO:_master_model_container: 16
+2024-05-17 10:47:34,601:INFO:_display_container: 2
+2024-05-17 10:47:34,604:INFO:GradientBoostingRegressor(random_state=5714)
+2024-05-17 10:47:34,604:INFO:create_model() successfully completed......................................
+2024-05-17 10:47:34,769:INFO:SubProcess create_model() end ==================================
+2024-05-17 10:47:34,769:INFO:Creating metrics dataframe
+2024-05-17 10:47:34,777:INFO:Initializing Light Gradient Boosting Machine
+2024-05-17 10:47:34,777:INFO:Total runtime is 0.573317249615987 minutes
+2024-05-17 10:47:34,780:INFO:SubProcess create_model() called ==================================
+2024-05-17 10:47:34,783:INFO:Initializing create_model()
+2024-05-17 10:47:34,783:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=lightgbm, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E9CEC9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:34,783:INFO:Checking exceptions
+2024-05-17 10:47:34,783:INFO:Importing libraries
+2024-05-17 10:47:34,783:INFO:Copying training dataset
+2024-05-17 10:47:34,789:INFO:Defining folds
+2024-05-17 10:47:34,789:INFO:Declaring metric variables
+2024-05-17 10:47:34,792:INFO:Importing untrained model
+2024-05-17 10:47:34,800:INFO:Light Gradient Boosting Machine Imported successfully
+2024-05-17 10:47:34,809:INFO:Starting cross validation
+2024-05-17 10:47:34,817:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 10:47:36,567:INFO:Calculating mean and std
+2024-05-17 10:47:36,569:INFO:Creating metrics dataframe
+2024-05-17 10:47:36,572:INFO:Uploading results into container
+2024-05-17 10:47:36,573:INFO:Uploading model into container now
+2024-05-17 10:47:36,573:INFO:_master_model_container: 17
+2024-05-17 10:47:36,574:INFO:_display_container: 2
+2024-05-17 10:47:36,574:INFO:LGBMRegressor(n_jobs=-1, random_state=5714)
+2024-05-17 10:47:36,574:INFO:create_model() successfully completed......................................
+2024-05-17 10:47:36,800:INFO:SubProcess create_model() end ==================================
+2024-05-17 10:47:36,800:INFO:Creating metrics dataframe
+2024-05-17 10:47:36,812:INFO:Initializing CatBoost Regressor
+2024-05-17 10:47:36,812:INFO:Total runtime is 0.6072311878204344 minutes
+2024-05-17 10:47:36,818:INFO:SubProcess create_model() called ==================================
+2024-05-17 10:47:36,819:INFO:Initializing create_model()
+2024-05-17 10:47:36,819:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=catboost, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E9CEC9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:36,819:INFO:Checking exceptions
+2024-05-17 10:47:36,819:INFO:Importing libraries
+2024-05-17 10:47:36,819:INFO:Copying training dataset
+2024-05-17 10:47:36,825:INFO:Defining folds
+2024-05-17 10:47:36,825:INFO:Declaring metric variables
+2024-05-17 10:47:36,827:INFO:Importing untrained model
+2024-05-17 10:47:36,836:INFO:CatBoost Regressor Imported successfully
+2024-05-17 10:47:36,844:INFO:Starting cross validation
+2024-05-17 10:47:36,855:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 10:47:43,724:INFO:Calculating mean and std
+2024-05-17 10:47:43,725:INFO:Creating metrics dataframe
+2024-05-17 10:47:43,728:INFO:Uploading results into container
+2024-05-17 10:47:43,730:INFO:Uploading model into container now
+2024-05-17 10:47:43,730:INFO:_master_model_container: 18
+2024-05-17 10:47:43,730:INFO:_display_container: 2
+2024-05-17 10:47:43,731:INFO:<catboost.core.CatBoostRegressor object at 0x0000016E999866D0>
+2024-05-17 10:47:43,732:INFO:create_model() successfully completed......................................
+2024-05-17 10:47:43,946:INFO:SubProcess create_model() end ==================================
+2024-05-17 10:47:43,946:INFO:Creating metrics dataframe
+2024-05-17 10:47:43,959:INFO:Initializing Dummy Regressor
+2024-05-17 10:47:43,959:INFO:Total runtime is 0.7263602534929909 minutes
+2024-05-17 10:47:43,963:INFO:SubProcess create_model() called ==================================
+2024-05-17 10:47:43,964:INFO:Initializing create_model()
+2024-05-17 10:47:43,964:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=dummy, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E9CEC9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:43,964:INFO:Checking exceptions
+2024-05-17 10:47:43,964:INFO:Importing libraries
+2024-05-17 10:47:43,964:INFO:Copying training dataset
+2024-05-17 10:47:43,971:INFO:Defining folds
+2024-05-17 10:47:43,971:INFO:Declaring metric variables
+2024-05-17 10:47:43,976:INFO:Importing untrained model
+2024-05-17 10:47:43,979:INFO:Dummy Regressor Imported successfully
+2024-05-17 10:47:43,988:INFO:Starting cross validation
+2024-05-17 10:47:43,999:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 10:47:44,912:INFO:Calculating mean and std
+2024-05-17 10:47:44,912:INFO:Creating metrics dataframe
+2024-05-17 10:47:44,916:INFO:Uploading results into container
+2024-05-17 10:47:44,917:INFO:Uploading model into container now
+2024-05-17 10:47:44,917:INFO:_master_model_container: 19
+2024-05-17 10:47:44,917:INFO:_display_container: 2
+2024-05-17 10:47:44,918:INFO:DummyRegressor()
+2024-05-17 10:47:44,918:INFO:create_model() successfully completed......................................
+2024-05-17 10:47:45,244:INFO:SubProcess create_model() end ==================================
+2024-05-17 10:47:45,245:INFO:Creating metrics dataframe
+2024-05-17 10:47:45,294:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:339: FutureWarning: Styler.applymap has been deprecated. Use Styler.map instead.
+  .applymap(highlight_cols, subset=["TT (Sec)"])
+
+2024-05-17 10:47:45,308:INFO:Initializing create_model()
+2024-05-17 10:47:45,308:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=5714), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:45,309:INFO:Checking exceptions
+2024-05-17 10:47:45,311:INFO:Importing libraries
+2024-05-17 10:47:45,311:INFO:Copying training dataset
+2024-05-17 10:47:45,317:INFO:Defining folds
+2024-05-17 10:47:45,317:INFO:Declaring metric variables
+2024-05-17 10:47:45,317:INFO:Importing untrained model
+2024-05-17 10:47:45,317:INFO:Declaring custom model
+2024-05-17 10:47:45,318:INFO:Extra Trees Regressor Imported successfully
+2024-05-17 10:47:45,329:INFO:Cross validation set to False
+2024-05-17 10:47:45,329:INFO:Fitting Model
+2024-05-17 10:47:45,672:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=5714)
+2024-05-17 10:47:45,673:INFO:create_model() successfully completed......................................
+2024-05-17 10:47:45,891:INFO:_master_model_container: 19
+2024-05-17 10:47:45,892:INFO:_display_container: 2
+2024-05-17 10:47:45,892:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=5714)
+2024-05-17 10:47:45,892:INFO:compare_models() successfully completed......................................
+2024-05-17 10:47:45,913:INFO:Initializing evaluate_model()
+2024-05-17 10:47:45,914:INFO:evaluate_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=5714), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None)
+2024-05-17 10:47:45,936:INFO:Initializing plot_model()
+2024-05-17 10:47:45,936:INFO:plot_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=5714), plot=pipeline, scale=1, save=False, fold=KFold(n_splits=10, random_state=None, shuffle=False), fit_kwargs={}, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=False, system=True, display=None, display_format=None)
+2024-05-17 10:47:45,936:INFO:Checking exceptions
+2024-05-17 10:47:45,971:INFO:Preloading libraries
+2024-05-17 10:47:45,999:INFO:Copying training dataset
+2024-05-17 10:47:45,999:INFO:Plot type: pipeline
+2024-05-17 10:47:46,235:INFO:Visual Rendered Successfully
+2024-05-17 10:47:46,408:INFO:plot_model() successfully completed......................................
+2024-05-17 10:47:46,431:INFO:Initializing predict_model()
+2024-05-17 10:47:46,432:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=5714), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016E97AB07C0>)
+2024-05-17 10:47:46,432:INFO:Checking exceptions
+2024-05-17 10:47:46,432:INFO:Preloading libraries
+2024-05-17 10:47:46,434:INFO:Set up data.
+2024-05-17 10:47:46,443:INFO:Set up index.
+2024-05-17 10:47:46,579:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-05-17 10:47:46,769:INFO:Initializing finalize_model()
+2024-05-17 10:47:46,770:INFO:finalize_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=5714), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2024-05-17 10:47:46,770:INFO:Finalizing ExtraTreesRegressor(n_jobs=-1, random_state=5714)
+2024-05-17 10:47:46,774:INFO:Initializing create_model()
+2024-05-17 10:47:46,774:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016EEA460590>, estimator=ExtraTreesRegressor(n_jobs=-1, random_state=5714), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 10:47:46,774:INFO:Checking exceptions
+2024-05-17 10:47:46,775:INFO:Importing libraries
+2024-05-17 10:47:46,775:INFO:Copying training dataset
+2024-05-17 10:47:46,775:INFO:Defining folds
+2024-05-17 10:47:46,775:INFO:Declaring metric variables
+2024-05-17 10:47:46,776:INFO:Importing untrained model
+2024-05-17 10:47:46,776:INFO:Declaring custom model
+2024-05-17 10:47:46,776:INFO:Extra Trees Regressor Imported successfully
+2024-05-17 10:47:46,784:INFO:Cross validation set to False
+2024-05-17 10:47:46,784:INFO:Fitting Model
+2024-05-17 12:20:03,543:INFO:PyCaret RegressionExperiment
+2024-05-17 12:20:03,543:INFO:Logging name: reg-default-name
+2024-05-17 12:20:03,544:INFO:ML Usecase: MLUsecase.REGRESSION
+2024-05-17 12:20:03,544:INFO:version 3.3.0
+2024-05-17 12:20:03,544:INFO:Initializing setup()
+2024-05-17 12:20:03,544:INFO:self.USI: c313
+2024-05-17 12:20:03,544:INFO:self._variable_keys: {'USI', 'data', 'exp_id', 'y', 'html_param', 'X_test', 'pipeline', 'logging_param', 'fold_groups_param', 'log_plots_param', 'fold_shuffle_param', 'y_train', '_ml_usecase', 'seed', 'exp_name_log', '_available_plots', 'gpu_n_jobs_param', 'X_train', 'gpu_param', 'memory', 'transform_target_param', 'fold_generator', 'y_test', 'X', 'n_jobs_param', 'target_param', 'idx'}
+2024-05-17 12:20:03,545:INFO:Checking environment
+2024-05-17 12:20:03,545:INFO:python_version: 3.11.0
+2024-05-17 12:20:03,545:INFO:python_build: ('main', 'Oct 24 2022 18:26:48')
+2024-05-17 12:20:03,546:INFO:machine: AMD64
+2024-05-17 12:20:03,546:INFO:platform: Windows-10-10.0.22631-SP0
+2024-05-17 12:20:03,555:INFO:Memory: svmem(total=8379490304, available=3353571328, percent=60.0, used=5025918976, free=3353571328)
+2024-05-17 12:20:03,556:INFO:Physical Core: 2
+2024-05-17 12:20:03,556:INFO:Logical Core: 4
+2024-05-17 12:20:03,556:INFO:Checking libraries
+2024-05-17 12:20:03,556:INFO:System:
+2024-05-17 12:20:03,556:INFO:    python: 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]
+2024-05-17 12:20:03,556:INFO:executable: c:\Users\yunit\AppData\Local\Programs\Python\Python311\python.exe
+2024-05-17 12:20:03,556:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-05-17 12:20:03,556:INFO:PyCaret required dependencies:
+2024-05-17 12:20:03,557:INFO:                 pip: 24.0
+2024-05-17 12:20:03,557:INFO:          setuptools: 65.5.0
+2024-05-17 12:20:03,557:INFO:             pycaret: 3.3.0
+2024-05-17 12:20:03,557:INFO:             IPython: 8.22.1
+2024-05-17 12:20:03,557:INFO:          ipywidgets: 8.1.2
+2024-05-17 12:20:03,557:INFO:                tqdm: 4.66.2
+2024-05-17 12:20:03,557:INFO:               numpy: 1.24.2
+2024-05-17 12:20:03,557:INFO:              pandas: 2.1.4
+2024-05-17 12:20:03,557:INFO:              jinja2: 3.1.3
+2024-05-17 12:20:03,557:INFO:               scipy: 1.11.3
+2024-05-17 12:20:03,557:INFO:              joblib: 1.3.2
+2024-05-17 12:20:03,557:INFO:             sklearn: 1.4.1.post1
+2024-05-17 12:20:03,557:INFO:                pyod: 1.1.3
+2024-05-17 12:20:03,557:INFO:            imblearn: 0.12.0
+2024-05-17 12:20:03,557:INFO:   category_encoders: 2.6.3
+2024-05-17 12:20:03,557:INFO:            lightgbm: 4.3.0
+2024-05-17 12:20:03,557:INFO:               numba: 0.58.1
+2024-05-17 12:20:03,557:INFO:            requests: 2.31.0
+2024-05-17 12:20:03,558:INFO:          matplotlib: 3.7.5
+2024-05-17 12:20:03,558:INFO:          scikitplot: 0.3.7
+2024-05-17 12:20:03,558:INFO:         yellowbrick: 1.5
+2024-05-17 12:20:03,558:INFO:              plotly: 5.19.0
+2024-05-17 12:20:03,558:INFO:    plotly-resampler: Not installed
+2024-05-17 12:20:03,558:INFO:             kaleido: 0.2.1
+2024-05-17 12:20:03,558:INFO:           schemdraw: 0.15
+2024-05-17 12:20:03,558:INFO:         statsmodels: 0.14.1
+2024-05-17 12:20:03,558:INFO:              sktime: 0.26.0
+2024-05-17 12:20:03,558:INFO:               tbats: 1.1.3
+2024-05-17 12:20:03,558:INFO:            pmdarima: 2.0.4
+2024-05-17 12:20:03,558:INFO:              psutil: 5.9.8
+2024-05-17 12:20:03,558:INFO:          markupsafe: 2.1.5
+2024-05-17 12:20:03,558:INFO:             pickle5: Not installed
+2024-05-17 12:20:03,558:INFO:         cloudpickle: 3.0.0
+2024-05-17 12:20:03,558:INFO:         deprecation: 2.1.0
+2024-05-17 12:20:03,558:INFO:              xxhash: 3.4.1
+2024-05-17 12:20:03,558:INFO:           wurlitzer: Not installed
+2024-05-17 12:20:03,558:INFO:PyCaret optional dependencies:
+2024-05-17 12:20:03,559:INFO:                shap: 0.44.1
+2024-05-17 12:20:03,559:INFO:           interpret: 0.5.1
+2024-05-17 12:20:03,559:INFO:                umap: 0.5.5
+2024-05-17 12:20:03,559:INFO:     ydata_profiling: 4.6.4
+2024-05-17 12:20:03,559:INFO:  explainerdashboard: 0.4.5
+2024-05-17 12:20:03,559:INFO:             autoviz: Not installed
+2024-05-17 12:20:03,559:INFO:           fairlearn: 0.7.0
+2024-05-17 12:20:03,559:INFO:          deepchecks: Not installed
+2024-05-17 12:20:03,559:INFO:             xgboost: Not installed
+2024-05-17 12:20:03,559:INFO:            catboost: 1.2.3
+2024-05-17 12:20:03,559:INFO:              kmodes: 0.12.2
+2024-05-17 12:20:03,559:INFO:             mlxtend: 0.23.1
+2024-05-17 12:20:03,559:INFO:       statsforecast: 1.5.0
+2024-05-17 12:20:03,559:INFO:        tune_sklearn: Not installed
+2024-05-17 12:20:03,559:INFO:                 ray: Not installed
+2024-05-17 12:20:03,559:INFO:            hyperopt: 0.2.7
+2024-05-17 12:20:03,559:INFO:              optuna: 3.5.0
+2024-05-17 12:20:03,559:INFO:               skopt: 0.9.0
+2024-05-17 12:20:03,559:INFO:              mlflow: 2.10.2
+2024-05-17 12:20:03,559:INFO:              gradio: 4.19.2
+2024-05-17 12:20:03,559:INFO:             fastapi: 0.110.0
+2024-05-17 12:20:03,559:INFO:             uvicorn: 0.27.1
+2024-05-17 12:20:03,559:INFO:              m2cgen: 0.10.0
+2024-05-17 12:20:03,559:INFO:           evidently: 0.4.16
+2024-05-17 12:20:03,559:INFO:               fugue: 0.8.6
+2024-05-17 12:20:03,559:INFO:           streamlit: 1.33.0
+2024-05-17 12:20:03,559:INFO:             prophet: Not installed
+2024-05-17 12:20:03,559:INFO:None
+2024-05-17 12:20:03,560:INFO:Set up data.
+2024-05-17 12:20:03,604:INFO:Set up folding strategy.
+2024-05-17 12:20:03,608:INFO:Set up train/test split.
+2024-05-17 12:20:03,653:INFO:Set up index.
+2024-05-17 12:20:03,655:INFO:Assigning column types.
+2024-05-17 12:20:03,666:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-05-17 12:20:03,672:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-05-17 12:20:03,679:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-05-17 12:20:03,691:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-17 12:20:03,749:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-17 12:20:03,790:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-17 12:20:03,794:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 12:20:03,797:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 12:20:03,800:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2024-05-17 12:20:03,804:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-05-17 12:20:03,807:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-17 12:20:03,856:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-17 12:20:03,893:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-17 12:20:03,894:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 12:20:03,895:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 12:20:03,895:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2024-05-17 12:20:03,900:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-05-17 12:20:03,903:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-17 12:20:03,953:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-17 12:20:03,991:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-17 12:20:03,991:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 12:20:03,992:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 12:20:03,996:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2024-05-17 12:20:04,003:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-17 12:20:04,052:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-17 12:20:04,088:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-17 12:20:04,088:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 12:20:04,089:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 12:20:04,089:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2024-05-17 12:20:04,097:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-17 12:20:04,153:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-17 12:20:04,188:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-17 12:20:04,189:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 12:20:04,189:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 12:20:04,198:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2024-05-17 12:20:04,251:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-17 12:20:04,287:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-17 12:20:04,288:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 12:20:04,288:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 12:20:04,288:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2024-05-17 12:20:04,345:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-17 12:20:04,384:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-17 12:20:04,385:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 12:20:04,385:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 12:20:04,447:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-17 12:20:04,484:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-05-17 12:20:04,485:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 12:20:04,485:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 12:20:04,486:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-05-17 12:20:04,545:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-17 12:20:04,583:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 12:20:04,583:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 12:20:04,681:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2024-05-17 12:20:04,759:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 12:20:04,760:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 12:20:04,760:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2024-05-17 12:20:04,905:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 12:20:04,905:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 12:20:05,016:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 12:20:05,016:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 12:20:05,029:INFO:Preparing preprocessing pipeline...
+2024-05-17 12:20:05,030:INFO:Set up simple imputation.
+2024-05-17 12:20:05,037:INFO:Set up encoding of categorical features.
+2024-05-17 12:20:05,037:INFO:Set up removing outliers.
+2024-05-17 12:20:05,037:INFO:Set up feature normalization.
+2024-05-17 12:20:05,549:INFO:Finished creating preprocessing pipeline.
+2024-05-17 12:20:05,557:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\yunit\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['buildingSize', 'landSize',
+                                             'bedRooms', 'bathRooms',
+                                             'garages'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['province', 'city'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['province', 'city'],
+                                    transformer=OneHotEncoder(cols=['province',
+                                                                    'city'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('remove_outliers',
+                 TransformerWrapper(transformer=RemoveOutliers(random_state=6128))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))])
+2024-05-17 12:20:05,557:INFO:Creating final display dataframe.
+2024-05-17 12:20:06,314:INFO:Setup _display_container:                     Description             Value
+0                    Session id              6128
+1                        Target             price
+2                   Target type        Regression
+3           Original data shape       (16000, 12)
+4        Transformed data shape       (15442, 32)
+5   Transformed train set shape       (10642, 32)
+6    Transformed test set shape        (4800, 32)
+7               Ignore features                 4
+8              Numeric features                 5
+9          Categorical features                 2
+10     Rows with missing values             45.2%
+11                   Preprocess              True
+12              Imputation type            simple
+13           Numeric imputation              mean
+14       Categorical imputation              mode
+15     Maximum one-hot encoding                25
+16              Encoding method              None
+17              Remove outliers              True
+18           Outliers threshold              0.05
+19                    Normalize              True
+20             Normalize method            zscore
+21               Fold Generator             KFold
+22                  Fold Number                10
+23                     CPU Jobs                -1
+24                      Use GPU             False
+25               Log Experiment             False
+26              Experiment Name  reg-default-name
+27                          USI              c313
+2024-05-17 12:20:06,455:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 12:20:06,455:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 12:20:06,556:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-05-17 12:20:06,556:INFO:Soft dependency imported: catboost: 1.2.3
+2024-05-17 12:20:06,559:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\metrics.py:51: FutureWarning: The `needs_threshold` and `needs_proba` parameter are deprecated in version 1.4 and will be removed in 1.6. You can either let `response_method` be `None` or set it to `predict` to preserve the same behaviour.
+  warnings.warn(
+
+2024-05-17 12:20:06,559:INFO:setup() successfully completed in 3.13s...............
+2024-05-17 12:20:06,577:INFO:Initializing get_config()
+2024-05-17 12:20:06,577:INFO:get_config(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, variable=X_train)
+2024-05-17 12:20:06,577:INFO:Variable: 'X_train' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'X_train_transformed' instead.
+2024-05-17 12:20:06,578:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\pycaret_experiment\pycaret_experiment.py:321: UserWarning: Variable: 'X_train' used to return the transformed values in PyCaret 2.x. From PyCaret 3.x, this will return the raw values. If you need the transformed values, call get_config with 'X_train_transformed' instead.
+  warnings.warn(msg)  # print on screen
+
+2024-05-17 12:20:06,590:INFO:Variable:  returned as        buildingSize  landSize  bedRooms  bathRooms  garages    province  \
+10719           105       105       3.0          2        0  Jawa Timur   
+14194          1000       514       5.0          5        2  Jawa Timur   
+6263            120        87       3.0          3        0  Jawa Timur   
+15712           240       184       3.0          3        0  Jawa Timur   
+33              200       200       2.0          1        0  Jawa Timur   
+...             ...       ...       ...        ...      ...         ...   
+969             175       122       4.0          3        0  Jawa Timur   
+3487            206       162       3.0          3        0  Jawa Timur   
+10333           600       400       6.0          5        0  Jawa Timur   
+7671            247       247       4.0          2        0  Jawa Timur   
+9271             45        84       2.0          1        0  Jawa Timur   
+
+           city  
+10719  Sidoarjo  
+14194    Malang  
+6263   Surabaya  
+15712  Surabaya  
+33       Gresik  
+...         ...  
+969      Gresik  
+3487   Sidoarjo  
+10333  Surabaya  
+7671   Surabaya  
+9271     Malang  
+
+[11200 rows x 7 columns]
+2024-05-17 12:20:06,590:INFO:get_config() successfully completed......................................
+2024-05-17 12:20:06,612:INFO:Initializing compare_models()
+2024-05-17 12:20:06,612:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, include=None, exclude=None, fold=None, round=4, cross_validation=True, sort=R2, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'R2', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>})
+2024-05-17 12:20:06,614:INFO:Checking exceptions
+2024-05-17 12:20:06,619:INFO:Preparing display monitor
+2024-05-17 12:20:06,651:INFO:Initializing Linear Regression
+2024-05-17 12:20:06,651:INFO:Total runtime is 0.0 minutes
+2024-05-17 12:20:06,654:INFO:SubProcess create_model() called ==================================
+2024-05-17 12:20:06,658:INFO:Initializing create_model()
+2024-05-17 12:20:06,659:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=lr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E8C7C9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:20:06,659:INFO:Checking exceptions
+2024-05-17 12:20:06,659:INFO:Importing libraries
+2024-05-17 12:20:06,659:INFO:Copying training dataset
+2024-05-17 12:20:06,669:INFO:Defining folds
+2024-05-17 12:20:06,669:INFO:Declaring metric variables
+2024-05-17 12:20:06,672:INFO:Importing untrained model
+2024-05-17 12:20:06,675:INFO:Linear Regression Imported successfully
+2024-05-17 12:20:06,684:INFO:Starting cross validation
+2024-05-17 12:20:06,702:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 12:20:21,359:INFO:Calculating mean and std
+2024-05-17 12:20:21,360:INFO:Creating metrics dataframe
+2024-05-17 12:20:21,363:INFO:Uploading results into container
+2024-05-17 12:20:21,363:INFO:Uploading model into container now
+2024-05-17 12:20:21,364:INFO:_master_model_container: 1
+2024-05-17 12:20:21,364:INFO:_display_container: 2
+2024-05-17 12:20:21,364:INFO:LinearRegression(n_jobs=-1)
+2024-05-17 12:20:21,364:INFO:create_model() successfully completed......................................
+2024-05-17 12:20:22,290:INFO:SubProcess create_model() end ==================================
+2024-05-17 12:20:22,290:INFO:Creating metrics dataframe
+2024-05-17 12:20:22,297:INFO:Initializing Lasso Regression
+2024-05-17 12:20:22,297:INFO:Total runtime is 0.2607630372047424 minutes
+2024-05-17 12:20:22,302:INFO:SubProcess create_model() called ==================================
+2024-05-17 12:20:22,302:INFO:Initializing create_model()
+2024-05-17 12:20:22,302:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=lasso, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E8C7C9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:20:22,302:INFO:Checking exceptions
+2024-05-17 12:20:22,302:INFO:Importing libraries
+2024-05-17 12:20:22,302:INFO:Copying training dataset
+2024-05-17 12:20:22,312:INFO:Defining folds
+2024-05-17 12:20:22,313:INFO:Declaring metric variables
+2024-05-17 12:20:22,317:INFO:Importing untrained model
+2024-05-17 12:20:22,324:INFO:Lasso Regression Imported successfully
+2024-05-17 12:20:22,336:INFO:Starting cross validation
+2024-05-17 12:20:22,345:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 12:20:23,312:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.241e+26, tolerance: 4.004e+24
+  model = cd_fast.enet_coordinate_descent(
+
+2024-05-17 12:20:23,385:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.584e+27, tolerance: 4.004e+24
+  model = cd_fast.enet_coordinate_descent(
+
+2024-05-17 12:20:23,385:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.861e+26, tolerance: 4.004e+24
+  model = cd_fast.enet_coordinate_descent(
+
+2024-05-17 12:20:23,389:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.214e+26, tolerance: 4.004e+24
+  model = cd_fast.enet_coordinate_descent(
+
+2024-05-17 12:20:24,386:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.251e+26, tolerance: 4.004e+24
+  model = cd_fast.enet_coordinate_descent(
+
+2024-05-17 12:20:24,390:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.130e+26, tolerance: 4.000e+24
+  model = cd_fast.enet_coordinate_descent(
+
+2024-05-17 12:20:24,424:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.616e+26, tolerance: 4.004e+24
+  model = cd_fast.enet_coordinate_descent(
+
+2024-05-17 12:20:24,435:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.940e+24, tolerance: 4.952e+21
+  model = cd_fast.enet_coordinate_descent(
+
+2024-05-17 12:20:25,085:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 3.799e+26, tolerance: 4.004e+24
+  model = cd_fast.enet_coordinate_descent(
+
+2024-05-17 12:20:25,096:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 2.120e+26, tolerance: 4.004e+24
+  model = cd_fast.enet_coordinate_descent(
+
+2024-05-17 12:20:25,122:INFO:Calculating mean and std
+2024-05-17 12:20:25,123:INFO:Creating metrics dataframe
+2024-05-17 12:20:25,126:INFO:Uploading results into container
+2024-05-17 12:20:25,126:INFO:Uploading model into container now
+2024-05-17 12:20:25,127:INFO:_master_model_container: 2
+2024-05-17 12:20:25,128:INFO:_display_container: 2
+2024-05-17 12:20:25,129:INFO:Lasso(random_state=6128)
+2024-05-17 12:20:25,129:INFO:create_model() successfully completed......................................
+2024-05-17 12:20:25,377:INFO:SubProcess create_model() end ==================================
+2024-05-17 12:20:25,377:INFO:Creating metrics dataframe
+2024-05-17 12:20:25,385:INFO:Initializing Ridge Regression
+2024-05-17 12:20:25,385:INFO:Total runtime is 0.31223418712615963 minutes
+2024-05-17 12:20:25,388:INFO:SubProcess create_model() called ==================================
+2024-05-17 12:20:25,388:INFO:Initializing create_model()
+2024-05-17 12:20:25,388:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=ridge, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E8C7C9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:20:25,388:INFO:Checking exceptions
+2024-05-17 12:20:25,389:INFO:Importing libraries
+2024-05-17 12:20:25,389:INFO:Copying training dataset
+2024-05-17 12:20:25,397:INFO:Defining folds
+2024-05-17 12:20:25,397:INFO:Declaring metric variables
+2024-05-17 12:20:25,402:INFO:Importing untrained model
+2024-05-17 12:20:25,409:INFO:Ridge Regression Imported successfully
+2024-05-17 12:20:25,420:INFO:Starting cross validation
+2024-05-17 12:20:25,430:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 12:20:26,765:INFO:Calculating mean and std
+2024-05-17 12:20:26,766:INFO:Creating metrics dataframe
+2024-05-17 12:20:26,768:INFO:Uploading results into container
+2024-05-17 12:20:26,768:INFO:Uploading model into container now
+2024-05-17 12:20:26,769:INFO:_master_model_container: 3
+2024-05-17 12:20:26,769:INFO:_display_container: 2
+2024-05-17 12:20:26,769:INFO:Ridge(random_state=6128)
+2024-05-17 12:20:26,770:INFO:create_model() successfully completed......................................
+2024-05-17 12:20:27,011:INFO:SubProcess create_model() end ==================================
+2024-05-17 12:20:27,012:INFO:Creating metrics dataframe
+2024-05-17 12:20:27,018:INFO:Initializing Elastic Net
+2024-05-17 12:20:27,018:INFO:Total runtime is 0.3394480188687642 minutes
+2024-05-17 12:20:27,021:INFO:SubProcess create_model() called ==================================
+2024-05-17 12:20:27,021:INFO:Initializing create_model()
+2024-05-17 12:20:27,021:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=en, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E8C7C9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:20:27,021:INFO:Checking exceptions
+2024-05-17 12:20:27,021:INFO:Importing libraries
+2024-05-17 12:20:27,021:INFO:Copying training dataset
+2024-05-17 12:20:27,028:INFO:Defining folds
+2024-05-17 12:20:27,029:INFO:Declaring metric variables
+2024-05-17 12:20:27,034:INFO:Importing untrained model
+2024-05-17 12:20:27,038:INFO:Elastic Net Imported successfully
+2024-05-17 12:20:27,046:INFO:Starting cross validation
+2024-05-17 12:20:27,056:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 12:20:28,414:INFO:Calculating mean and std
+2024-05-17 12:20:28,415:INFO:Creating metrics dataframe
+2024-05-17 12:20:28,417:INFO:Uploading results into container
+2024-05-17 12:20:28,417:INFO:Uploading model into container now
+2024-05-17 12:20:28,418:INFO:_master_model_container: 4
+2024-05-17 12:20:28,418:INFO:_display_container: 2
+2024-05-17 12:20:28,418:INFO:ElasticNet(random_state=6128)
+2024-05-17 12:20:28,418:INFO:create_model() successfully completed......................................
+2024-05-17 12:20:28,651:INFO:SubProcess create_model() end ==================================
+2024-05-17 12:20:28,652:INFO:Creating metrics dataframe
+2024-05-17 12:20:28,658:INFO:Initializing Least Angle Regression
+2024-05-17 12:20:28,658:INFO:Total runtime is 0.36678021351496376 minutes
+2024-05-17 12:20:28,663:INFO:SubProcess create_model() called ==================================
+2024-05-17 12:20:28,663:INFO:Initializing create_model()
+2024-05-17 12:20:28,663:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=lar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E8C7C9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:20:28,663:INFO:Checking exceptions
+2024-05-17 12:20:28,663:INFO:Importing libraries
+2024-05-17 12:20:28,663:INFO:Copying training dataset
+2024-05-17 12:20:28,670:INFO:Defining folds
+2024-05-17 12:20:28,670:INFO:Declaring metric variables
+2024-05-17 12:20:28,674:INFO:Importing untrained model
+2024-05-17 12:20:28,678:INFO:Least Angle Regression Imported successfully
+2024-05-17 12:20:28,691:INFO:Starting cross validation
+2024-05-17 12:20:28,701:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 12:20:30,083:INFO:Calculating mean and std
+2024-05-17 12:20:30,084:INFO:Creating metrics dataframe
+2024-05-17 12:20:30,086:INFO:Uploading results into container
+2024-05-17 12:20:30,086:INFO:Uploading model into container now
+2024-05-17 12:20:30,087:INFO:_master_model_container: 5
+2024-05-17 12:20:30,087:INFO:_display_container: 2
+2024-05-17 12:20:30,088:INFO:Lars(random_state=6128)
+2024-05-17 12:20:30,088:INFO:create_model() successfully completed......................................
+2024-05-17 12:20:30,320:INFO:SubProcess create_model() end ==================================
+2024-05-17 12:20:30,320:INFO:Creating metrics dataframe
+2024-05-17 12:20:30,326:INFO:Initializing Lasso Least Angle Regression
+2024-05-17 12:20:30,326:INFO:Total runtime is 0.3945910771687825 minutes
+2024-05-17 12:20:30,331:INFO:SubProcess create_model() called ==================================
+2024-05-17 12:20:30,331:INFO:Initializing create_model()
+2024-05-17 12:20:30,331:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=llar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E8C7C9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:20:30,331:INFO:Checking exceptions
+2024-05-17 12:20:30,331:INFO:Importing libraries
+2024-05-17 12:20:30,331:INFO:Copying training dataset
+2024-05-17 12:20:30,338:INFO:Defining folds
+2024-05-17 12:20:30,338:INFO:Declaring metric variables
+2024-05-17 12:20:30,341:INFO:Importing untrained model
+2024-05-17 12:20:30,346:INFO:Lasso Least Angle Regression Imported successfully
+2024-05-17 12:20:30,355:INFO:Starting cross validation
+2024-05-17 12:20:30,367:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 12:20:31,694:INFO:Calculating mean and std
+2024-05-17 12:20:31,696:INFO:Creating metrics dataframe
+2024-05-17 12:20:31,700:INFO:Uploading results into container
+2024-05-17 12:20:31,701:INFO:Uploading model into container now
+2024-05-17 12:20:31,701:INFO:_master_model_container: 6
+2024-05-17 12:20:31,701:INFO:_display_container: 2
+2024-05-17 12:20:31,702:INFO:LassoLars(random_state=6128)
+2024-05-17 12:20:31,702:INFO:create_model() successfully completed......................................
+2024-05-17 12:20:31,933:INFO:SubProcess create_model() end ==================================
+2024-05-17 12:20:31,934:INFO:Creating metrics dataframe
+2024-05-17 12:20:31,940:INFO:Initializing Orthogonal Matching Pursuit
+2024-05-17 12:20:31,940:INFO:Total runtime is 0.42148674329121905 minutes
+2024-05-17 12:20:31,944:INFO:SubProcess create_model() called ==================================
+2024-05-17 12:20:31,944:INFO:Initializing create_model()
+2024-05-17 12:20:31,945:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=omp, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E8C7C9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:20:31,945:INFO:Checking exceptions
+2024-05-17 12:20:31,945:INFO:Importing libraries
+2024-05-17 12:20:31,945:INFO:Copying training dataset
+2024-05-17 12:20:31,951:INFO:Defining folds
+2024-05-17 12:20:31,952:INFO:Declaring metric variables
+2024-05-17 12:20:31,954:INFO:Importing untrained model
+2024-05-17 12:20:31,960:INFO:Orthogonal Matching Pursuit Imported successfully
+2024-05-17 12:20:31,972:INFO:Starting cross validation
+2024-05-17 12:20:31,986:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 12:20:33,390:INFO:Calculating mean and std
+2024-05-17 12:20:33,391:INFO:Creating metrics dataframe
+2024-05-17 12:20:33,392:INFO:Uploading results into container
+2024-05-17 12:20:33,393:INFO:Uploading model into container now
+2024-05-17 12:20:33,393:INFO:_master_model_container: 7
+2024-05-17 12:20:33,393:INFO:_display_container: 2
+2024-05-17 12:20:33,393:INFO:OrthogonalMatchingPursuit()
+2024-05-17 12:20:33,394:INFO:create_model() successfully completed......................................
+2024-05-17 12:20:33,623:INFO:SubProcess create_model() end ==================================
+2024-05-17 12:20:33,623:INFO:Creating metrics dataframe
+2024-05-17 12:20:33,631:INFO:Initializing Bayesian Ridge
+2024-05-17 12:20:33,631:INFO:Total runtime is 0.4496664404869079 minutes
+2024-05-17 12:20:33,633:INFO:SubProcess create_model() called ==================================
+2024-05-17 12:20:33,634:INFO:Initializing create_model()
+2024-05-17 12:20:33,634:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=br, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E8C7C9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:20:33,634:INFO:Checking exceptions
+2024-05-17 12:20:33,634:INFO:Importing libraries
+2024-05-17 12:20:33,634:INFO:Copying training dataset
+2024-05-17 12:20:33,640:INFO:Defining folds
+2024-05-17 12:20:33,640:INFO:Declaring metric variables
+2024-05-17 12:20:33,642:INFO:Importing untrained model
+2024-05-17 12:20:33,651:INFO:Bayesian Ridge Imported successfully
+2024-05-17 12:20:33,678:INFO:Starting cross validation
+2024-05-17 12:20:33,692:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 12:20:35,026:INFO:Calculating mean and std
+2024-05-17 12:20:35,029:INFO:Creating metrics dataframe
+2024-05-17 12:20:35,032:INFO:Uploading results into container
+2024-05-17 12:20:35,033:INFO:Uploading model into container now
+2024-05-17 12:20:35,033:INFO:_master_model_container: 8
+2024-05-17 12:20:35,034:INFO:_display_container: 2
+2024-05-17 12:20:35,034:INFO:BayesianRidge()
+2024-05-17 12:20:35,034:INFO:create_model() successfully completed......................................
+2024-05-17 12:20:35,261:INFO:SubProcess create_model() end ==================================
+2024-05-17 12:20:35,262:INFO:Creating metrics dataframe
+2024-05-17 12:20:35,269:INFO:Initializing Passive Aggressive Regressor
+2024-05-17 12:20:35,269:INFO:Total runtime is 0.4769656578699747 minutes
+2024-05-17 12:20:35,271:INFO:SubProcess create_model() called ==================================
+2024-05-17 12:20:35,272:INFO:Initializing create_model()
+2024-05-17 12:20:35,272:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=par, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E8C7C9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:20:35,272:INFO:Checking exceptions
+2024-05-17 12:20:35,272:INFO:Importing libraries
+2024-05-17 12:20:35,272:INFO:Copying training dataset
+2024-05-17 12:20:35,279:INFO:Defining folds
+2024-05-17 12:20:35,280:INFO:Declaring metric variables
+2024-05-17 12:20:35,282:INFO:Importing untrained model
+2024-05-17 12:20:35,289:INFO:Passive Aggressive Regressor Imported successfully
+2024-05-17 12:20:35,297:INFO:Starting cross validation
+2024-05-17 12:20:35,306:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 12:20:37,912:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1575: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+
+2024-05-17 12:20:37,912:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1575: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+
+2024-05-17 12:20:37,912:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1575: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+
+2024-05-17 12:20:40,439:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1575: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+
+2024-05-17 12:20:40,448:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1575: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+
+2024-05-17 12:20:40,456:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1575: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+
+2024-05-17 12:20:40,473:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1575: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+
+2024-05-17 12:20:41,922:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1575: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+
+2024-05-17 12:20:41,957:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1575: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+
+2024-05-17 12:20:41,987:INFO:Calculating mean and std
+2024-05-17 12:20:41,988:INFO:Creating metrics dataframe
+2024-05-17 12:20:41,991:INFO:Uploading results into container
+2024-05-17 12:20:41,992:INFO:Uploading model into container now
+2024-05-17 12:20:41,995:INFO:_master_model_container: 9
+2024-05-17 12:20:41,995:INFO:_display_container: 2
+2024-05-17 12:20:41,996:INFO:PassiveAggressiveRegressor(random_state=6128)
+2024-05-17 12:20:41,996:INFO:create_model() successfully completed......................................
+2024-05-17 12:20:42,225:INFO:SubProcess create_model() end ==================================
+2024-05-17 12:20:42,225:INFO:Creating metrics dataframe
+2024-05-17 12:20:42,232:INFO:Initializing Huber Regressor
+2024-05-17 12:20:42,233:INFO:Total runtime is 0.5930435140927632 minutes
+2024-05-17 12:20:42,237:INFO:SubProcess create_model() called ==================================
+2024-05-17 12:20:42,237:INFO:Initializing create_model()
+2024-05-17 12:20:42,237:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=huber, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E8C7C9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:20:42,237:INFO:Checking exceptions
+2024-05-17 12:20:42,237:INFO:Importing libraries
+2024-05-17 12:20:42,237:INFO:Copying training dataset
+2024-05-17 12:20:42,244:INFO:Defining folds
+2024-05-17 12:20:42,245:INFO:Declaring metric variables
+2024-05-17 12:20:42,251:INFO:Importing untrained model
+2024-05-17 12:20:42,255:INFO:Huber Regressor Imported successfully
+2024-05-17 12:20:42,261:INFO:Starting cross validation
+2024-05-17 12:20:42,272:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 12:20:43,939:INFO:Calculating mean and std
+2024-05-17 12:20:43,940:INFO:Creating metrics dataframe
+2024-05-17 12:20:43,942:INFO:Uploading results into container
+2024-05-17 12:20:43,943:INFO:Uploading model into container now
+2024-05-17 12:20:43,944:INFO:_master_model_container: 10
+2024-05-17 12:20:43,945:INFO:_display_container: 2
+2024-05-17 12:20:43,945:INFO:HuberRegressor()
+2024-05-17 12:20:43,945:INFO:create_model() successfully completed......................................
+2024-05-17 12:20:44,176:INFO:SubProcess create_model() end ==================================
+2024-05-17 12:20:44,176:INFO:Creating metrics dataframe
+2024-05-17 12:20:44,185:INFO:Initializing K Neighbors Regressor
+2024-05-17 12:20:44,185:INFO:Total runtime is 0.625564952691396 minutes
+2024-05-17 12:20:44,189:INFO:SubProcess create_model() called ==================================
+2024-05-17 12:20:44,189:INFO:Initializing create_model()
+2024-05-17 12:20:44,189:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=knn, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E8C7C9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:20:44,189:INFO:Checking exceptions
+2024-05-17 12:20:44,189:INFO:Importing libraries
+2024-05-17 12:20:44,189:INFO:Copying training dataset
+2024-05-17 12:20:44,197:INFO:Defining folds
+2024-05-17 12:20:44,197:INFO:Declaring metric variables
+2024-05-17 12:20:44,202:INFO:Importing untrained model
+2024-05-17 12:20:44,205:INFO:K Neighbors Regressor Imported successfully
+2024-05-17 12:20:44,216:INFO:Starting cross validation
+2024-05-17 12:20:44,224:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 12:20:45,836:INFO:Calculating mean and std
+2024-05-17 12:20:45,838:INFO:Creating metrics dataframe
+2024-05-17 12:20:45,839:INFO:Uploading results into container
+2024-05-17 12:20:45,840:INFO:Uploading model into container now
+2024-05-17 12:20:45,840:INFO:_master_model_container: 11
+2024-05-17 12:20:45,840:INFO:_display_container: 2
+2024-05-17 12:20:45,840:INFO:KNeighborsRegressor(n_jobs=-1)
+2024-05-17 12:20:45,841:INFO:create_model() successfully completed......................................
+2024-05-17 12:20:46,071:INFO:SubProcess create_model() end ==================================
+2024-05-17 12:20:46,072:INFO:Creating metrics dataframe
+2024-05-17 12:20:46,079:INFO:Initializing Decision Tree Regressor
+2024-05-17 12:20:46,079:INFO:Total runtime is 0.6571366429328918 minutes
+2024-05-17 12:20:46,083:INFO:SubProcess create_model() called ==================================
+2024-05-17 12:20:46,083:INFO:Initializing create_model()
+2024-05-17 12:20:46,083:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=dt, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E8C7C9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:20:46,083:INFO:Checking exceptions
+2024-05-17 12:20:46,083:INFO:Importing libraries
+2024-05-17 12:20:46,083:INFO:Copying training dataset
+2024-05-17 12:20:46,089:INFO:Defining folds
+2024-05-17 12:20:46,090:INFO:Declaring metric variables
+2024-05-17 12:20:46,096:INFO:Importing untrained model
+2024-05-17 12:20:46,099:INFO:Decision Tree Regressor Imported successfully
+2024-05-17 12:20:46,107:INFO:Starting cross validation
+2024-05-17 12:20:46,118:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 12:20:47,612:INFO:Calculating mean and std
+2024-05-17 12:20:47,612:INFO:Creating metrics dataframe
+2024-05-17 12:20:47,614:INFO:Uploading results into container
+2024-05-17 12:20:47,614:INFO:Uploading model into container now
+2024-05-17 12:20:47,615:INFO:_master_model_container: 12
+2024-05-17 12:20:47,615:INFO:_display_container: 2
+2024-05-17 12:20:47,615:INFO:DecisionTreeRegressor(random_state=6128)
+2024-05-17 12:20:47,615:INFO:create_model() successfully completed......................................
+2024-05-17 12:20:47,841:INFO:SubProcess create_model() end ==================================
+2024-05-17 12:20:47,841:INFO:Creating metrics dataframe
+2024-05-17 12:20:47,850:INFO:Initializing Random Forest Regressor
+2024-05-17 12:20:47,850:INFO:Total runtime is 0.6866509636243183 minutes
+2024-05-17 12:20:47,853:INFO:SubProcess create_model() called ==================================
+2024-05-17 12:20:47,853:INFO:Initializing create_model()
+2024-05-17 12:20:47,853:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=rf, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E8C7C9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:20:47,853:INFO:Checking exceptions
+2024-05-17 12:20:47,853:INFO:Importing libraries
+2024-05-17 12:20:47,854:INFO:Copying training dataset
+2024-05-17 12:20:47,862:INFO:Defining folds
+2024-05-17 12:20:47,863:INFO:Declaring metric variables
+2024-05-17 12:20:47,868:INFO:Importing untrained model
+2024-05-17 12:20:47,872:INFO:Random Forest Regressor Imported successfully
+2024-05-17 12:20:47,882:INFO:Starting cross validation
+2024-05-17 12:20:47,891:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 12:20:57,274:INFO:Calculating mean and std
+2024-05-17 12:20:57,276:INFO:Creating metrics dataframe
+2024-05-17 12:20:57,279:INFO:Uploading results into container
+2024-05-17 12:20:57,280:INFO:Uploading model into container now
+2024-05-17 12:20:57,280:INFO:_master_model_container: 13
+2024-05-17 12:20:57,282:INFO:_display_container: 2
+2024-05-17 12:20:57,282:INFO:RandomForestRegressor(n_jobs=-1, random_state=6128)
+2024-05-17 12:20:57,282:INFO:create_model() successfully completed......................................
+2024-05-17 12:20:57,581:INFO:SubProcess create_model() end ==================================
+2024-05-17 12:20:57,581:INFO:Creating metrics dataframe
+2024-05-17 12:20:57,589:INFO:Initializing Extra Trees Regressor
+2024-05-17 12:20:57,589:INFO:Total runtime is 0.8489719430605569 minutes
+2024-05-17 12:20:57,595:INFO:SubProcess create_model() called ==================================
+2024-05-17 12:20:57,595:INFO:Initializing create_model()
+2024-05-17 12:20:57,595:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=et, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E8C7C9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:20:57,595:INFO:Checking exceptions
+2024-05-17 12:20:57,595:INFO:Importing libraries
+2024-05-17 12:20:57,595:INFO:Copying training dataset
+2024-05-17 12:20:57,603:INFO:Defining folds
+2024-05-17 12:20:57,604:INFO:Declaring metric variables
+2024-05-17 12:20:57,608:INFO:Importing untrained model
+2024-05-17 12:20:57,613:INFO:Extra Trees Regressor Imported successfully
+2024-05-17 12:20:57,633:INFO:Starting cross validation
+2024-05-17 12:20:57,640:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 12:21:04,719:INFO:Calculating mean and std
+2024-05-17 12:21:04,720:INFO:Creating metrics dataframe
+2024-05-17 12:21:04,722:INFO:Uploading results into container
+2024-05-17 12:21:04,722:INFO:Uploading model into container now
+2024-05-17 12:21:04,723:INFO:_master_model_container: 14
+2024-05-17 12:21:04,723:INFO:_display_container: 2
+2024-05-17 12:21:04,723:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=6128)
+2024-05-17 12:21:04,723:INFO:create_model() successfully completed......................................
+2024-05-17 12:21:04,980:INFO:SubProcess create_model() end ==================================
+2024-05-17 12:21:04,980:INFO:Creating metrics dataframe
+2024-05-17 12:21:04,987:INFO:Initializing AdaBoost Regressor
+2024-05-17 12:21:04,987:INFO:Total runtime is 0.9722738464673358 minutes
+2024-05-17 12:21:04,990:INFO:SubProcess create_model() called ==================================
+2024-05-17 12:21:04,990:INFO:Initializing create_model()
+2024-05-17 12:21:04,990:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=ada, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E8C7C9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:21:04,991:INFO:Checking exceptions
+2024-05-17 12:21:04,991:INFO:Importing libraries
+2024-05-17 12:21:04,991:INFO:Copying training dataset
+2024-05-17 12:21:04,999:INFO:Defining folds
+2024-05-17 12:21:04,999:INFO:Declaring metric variables
+2024-05-17 12:21:05,002:INFO:Importing untrained model
+2024-05-17 12:21:05,008:INFO:AdaBoost Regressor Imported successfully
+2024-05-17 12:21:05,022:INFO:Starting cross validation
+2024-05-17 12:21:05,035:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 12:21:07,929:INFO:Calculating mean and std
+2024-05-17 12:21:07,930:INFO:Creating metrics dataframe
+2024-05-17 12:21:07,932:INFO:Uploading results into container
+2024-05-17 12:21:07,932:INFO:Uploading model into container now
+2024-05-17 12:21:07,933:INFO:_master_model_container: 15
+2024-05-17 12:21:07,933:INFO:_display_container: 2
+2024-05-17 12:21:07,933:INFO:AdaBoostRegressor(random_state=6128)
+2024-05-17 12:21:07,933:INFO:create_model() successfully completed......................................
+2024-05-17 12:21:08,165:INFO:SubProcess create_model() end ==================================
+2024-05-17 12:21:08,165:INFO:Creating metrics dataframe
+2024-05-17 12:21:08,173:INFO:Initializing Gradient Boosting Regressor
+2024-05-17 12:21:08,173:INFO:Total runtime is 1.0253662784894306 minutes
+2024-05-17 12:21:08,177:INFO:SubProcess create_model() called ==================================
+2024-05-17 12:21:08,177:INFO:Initializing create_model()
+2024-05-17 12:21:08,177:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=gbr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E8C7C9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:21:08,177:INFO:Checking exceptions
+2024-05-17 12:21:08,177:INFO:Importing libraries
+2024-05-17 12:21:08,177:INFO:Copying training dataset
+2024-05-17 12:21:08,184:INFO:Defining folds
+2024-05-17 12:21:08,184:INFO:Declaring metric variables
+2024-05-17 12:21:08,187:INFO:Importing untrained model
+2024-05-17 12:21:08,192:INFO:Gradient Boosting Regressor Imported successfully
+2024-05-17 12:21:08,200:INFO:Starting cross validation
+2024-05-17 12:21:08,210:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 12:21:12,011:INFO:Calculating mean and std
+2024-05-17 12:21:12,012:INFO:Creating metrics dataframe
+2024-05-17 12:21:12,014:INFO:Uploading results into container
+2024-05-17 12:21:12,014:INFO:Uploading model into container now
+2024-05-17 12:21:12,015:INFO:_master_model_container: 16
+2024-05-17 12:21:12,015:INFO:_display_container: 2
+2024-05-17 12:21:12,016:INFO:GradientBoostingRegressor(random_state=6128)
+2024-05-17 12:21:12,016:INFO:create_model() successfully completed......................................
+2024-05-17 12:21:12,241:INFO:SubProcess create_model() end ==================================
+2024-05-17 12:21:12,241:INFO:Creating metrics dataframe
+2024-05-17 12:21:12,252:INFO:Initializing Light Gradient Boosting Machine
+2024-05-17 12:21:12,252:INFO:Total runtime is 1.0933609565099078 minutes
+2024-05-17 12:21:12,257:INFO:SubProcess create_model() called ==================================
+2024-05-17 12:21:12,257:INFO:Initializing create_model()
+2024-05-17 12:21:12,257:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=lightgbm, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E8C7C9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:21:12,257:INFO:Checking exceptions
+2024-05-17 12:21:12,258:INFO:Importing libraries
+2024-05-17 12:21:12,258:INFO:Copying training dataset
+2024-05-17 12:21:12,265:INFO:Defining folds
+2024-05-17 12:21:12,265:INFO:Declaring metric variables
+2024-05-17 12:21:12,268:INFO:Importing untrained model
+2024-05-17 12:21:12,273:INFO:Light Gradient Boosting Machine Imported successfully
+2024-05-17 12:21:12,283:INFO:Starting cross validation
+2024-05-17 12:21:12,293:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 12:21:14,595:INFO:Calculating mean and std
+2024-05-17 12:21:14,597:INFO:Creating metrics dataframe
+2024-05-17 12:21:14,600:INFO:Uploading results into container
+2024-05-17 12:21:14,601:INFO:Uploading model into container now
+2024-05-17 12:21:14,602:INFO:_master_model_container: 17
+2024-05-17 12:21:14,602:INFO:_display_container: 2
+2024-05-17 12:21:14,602:INFO:LGBMRegressor(n_jobs=-1, random_state=6128)
+2024-05-17 12:21:14,602:INFO:create_model() successfully completed......................................
+2024-05-17 12:21:14,849:INFO:SubProcess create_model() end ==================================
+2024-05-17 12:21:14,849:INFO:Creating metrics dataframe
+2024-05-17 12:21:14,856:INFO:Initializing CatBoost Regressor
+2024-05-17 12:21:14,856:INFO:Total runtime is 1.1367601792017616 minutes
+2024-05-17 12:21:14,860:INFO:SubProcess create_model() called ==================================
+2024-05-17 12:21:14,860:INFO:Initializing create_model()
+2024-05-17 12:21:14,861:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=catboost, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E8C7C9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:21:14,861:INFO:Checking exceptions
+2024-05-17 12:21:14,861:INFO:Importing libraries
+2024-05-17 12:21:14,861:INFO:Copying training dataset
+2024-05-17 12:21:14,869:INFO:Defining folds
+2024-05-17 12:21:14,869:INFO:Declaring metric variables
+2024-05-17 12:21:14,873:INFO:Importing untrained model
+2024-05-17 12:21:14,881:INFO:CatBoost Regressor Imported successfully
+2024-05-17 12:21:14,919:INFO:Starting cross validation
+2024-05-17 12:21:14,926:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 12:21:28,470:INFO:Calculating mean and std
+2024-05-17 12:21:28,473:INFO:Creating metrics dataframe
+2024-05-17 12:21:28,476:INFO:Uploading results into container
+2024-05-17 12:21:28,478:INFO:Uploading model into container now
+2024-05-17 12:21:28,479:INFO:_master_model_container: 18
+2024-05-17 12:21:28,479:INFO:_display_container: 2
+2024-05-17 12:21:28,479:INFO:<catboost.core.CatBoostRegressor object at 0x0000016E8F450490>
+2024-05-17 12:21:28,480:INFO:create_model() successfully completed......................................
+2024-05-17 12:21:28,746:INFO:SubProcess create_model() end ==================================
+2024-05-17 12:21:28,747:INFO:Creating metrics dataframe
+2024-05-17 12:21:28,755:INFO:Initializing Dummy Regressor
+2024-05-17 12:21:28,755:INFO:Total runtime is 1.368410285313924 minutes
+2024-05-17 12:21:28,758:INFO:SubProcess create_model() called ==================================
+2024-05-17 12:21:28,759:INFO:Initializing create_model()
+2024-05-17 12:21:28,759:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=dummy, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000016E8C7C9350>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:21:28,759:INFO:Checking exceptions
+2024-05-17 12:21:28,759:INFO:Importing libraries
+2024-05-17 12:21:28,759:INFO:Copying training dataset
+2024-05-17 12:21:28,766:INFO:Defining folds
+2024-05-17 12:21:28,766:INFO:Declaring metric variables
+2024-05-17 12:21:28,771:INFO:Importing untrained model
+2024-05-17 12:21:28,775:INFO:Dummy Regressor Imported successfully
+2024-05-17 12:21:28,785:INFO:Starting cross validation
+2024-05-17 12:21:28,799:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-05-17 12:21:30,297:INFO:Calculating mean and std
+2024-05-17 12:21:30,298:INFO:Creating metrics dataframe
+2024-05-17 12:21:30,300:INFO:Uploading results into container
+2024-05-17 12:21:30,302:INFO:Uploading model into container now
+2024-05-17 12:21:30,302:INFO:_master_model_container: 19
+2024-05-17 12:21:30,302:INFO:_display_container: 2
+2024-05-17 12:21:30,302:INFO:DummyRegressor()
+2024-05-17 12:21:30,302:INFO:create_model() successfully completed......................................
+2024-05-17 12:21:30,537:INFO:SubProcess create_model() end ==================================
+2024-05-17 12:21:30,537:INFO:Creating metrics dataframe
+2024-05-17 12:21:30,548:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:339: FutureWarning: Styler.applymap has been deprecated. Use Styler.map instead.
+  .applymap(highlight_cols, subset=["TT (Sec)"])
+
+2024-05-17 12:21:30,557:INFO:Initializing create_model()
+2024-05-17 12:21:30,558:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=HuberRegressor(), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:21:30,558:INFO:Checking exceptions
+2024-05-17 12:21:30,561:INFO:Importing libraries
+2024-05-17 12:21:30,561:INFO:Copying training dataset
+2024-05-17 12:21:30,566:INFO:Defining folds
+2024-05-17 12:21:30,566:INFO:Declaring metric variables
+2024-05-17 12:21:30,566:INFO:Importing untrained model
+2024-05-17 12:21:30,566:INFO:Declaring custom model
+2024-05-17 12:21:30,566:INFO:Huber Regressor Imported successfully
+2024-05-17 12:21:30,573:INFO:Cross validation set to False
+2024-05-17 12:21:30,573:INFO:Fitting Model
+2024-05-17 12:21:31,045:INFO:HuberRegressor()
+2024-05-17 12:21:31,045:INFO:create_model() successfully completed......................................
+2024-05-17 12:21:31,285:INFO:_master_model_container: 19
+2024-05-17 12:21:31,286:INFO:_display_container: 2
+2024-05-17 12:21:31,286:INFO:HuberRegressor()
+2024-05-17 12:21:31,286:INFO:compare_models() successfully completed......................................
+2024-05-17 12:21:31,306:INFO:Initializing evaluate_model()
+2024-05-17 12:21:31,306:INFO:evaluate_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=HuberRegressor(), fold=None, fit_kwargs=None, plot_kwargs=None, feature_name=None, groups=None)
+2024-05-17 12:21:31,318:INFO:Initializing plot_model()
+2024-05-17 12:21:31,318:INFO:plot_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=HuberRegressor(), plot=pipeline, scale=1, save=False, fold=KFold(n_splits=10, random_state=None, shuffle=False), fit_kwargs={}, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=False, system=True, display=None, display_format=None)
+2024-05-17 12:21:31,318:INFO:Checking exceptions
+2024-05-17 12:21:31,322:INFO:Preloading libraries
+2024-05-17 12:21:31,322:INFO:Copying training dataset
+2024-05-17 12:21:31,322:INFO:Plot type: pipeline
+2024-05-17 12:21:31,428:INFO:Visual Rendered Successfully
+2024-05-17 12:21:31,660:INFO:plot_model() successfully completed......................................
+2024-05-17 12:21:37,977:INFO:Initializing predict_model()
+2024-05-17 12:21:37,977:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=HuberRegressor(), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000016E9D16C400>)
+2024-05-17 12:21:37,977:INFO:Checking exceptions
+2024-05-17 12:21:37,977:INFO:Preloading libraries
+2024-05-17 12:21:37,981:INFO:Set up data.
+2024-05-17 12:21:37,988:INFO:Set up index.
+2024-05-17 12:21:38,077:WARNING:c:\Users\yunit\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2024-05-17 12:21:38,351:INFO:Initializing finalize_model()
+2024-05-17 12:21:38,351:INFO:finalize_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=HuberRegressor(), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2024-05-17 12:21:38,352:INFO:Finalizing HuberRegressor()
+2024-05-17 12:21:38,356:INFO:Initializing create_model()
+2024-05-17 12:21:38,357:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x0000016E8CB98790>, estimator=HuberRegressor(), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, error_score=0.0, kwargs={})
+2024-05-17 12:21:38,357:INFO:Checking exceptions
+2024-05-17 12:21:38,361:INFO:Importing libraries
+2024-05-17 12:21:38,361:INFO:Copying training dataset
+2024-05-17 12:21:38,361:INFO:Defining folds
+2024-05-17 12:21:38,361:INFO:Declaring metric variables
+2024-05-17 12:21:38,362:INFO:Importing untrained model
+2024-05-17 12:21:38,362:INFO:Declaring custom model
+2024-05-17 12:21:38,362:INFO:Huber Regressor Imported successfully
+2024-05-17 12:21:38,370:INFO:Cross validation set to False
+2024-05-17 12:21:38,371:INFO:Fitting Model
